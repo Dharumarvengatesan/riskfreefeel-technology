@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers — RiskFreeFeel Technologies | Join Our Team</title>
+  <meta name="description" content="Join RiskFreeFeel Technologies. We're hiring Flutter developers, backend engineers, UI/UX designers, and more. Remote-friendly, competitive salary, great culture." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230057FF'/><text y='.9em' font-size='60' x='50%' text-anchor='middle' fill='white' font-weight='bold' dy='.1em'>R</text></svg>" />
+  <link rel="stylesheet" href="../assets/css/globals.css" />
+  <link rel="stylesheet" href="../assets/css/navbar.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+  <style>
+    .job-card {
+      background: var(--bg-glass);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl);
+      padding: 28px 32px;
+      transition: all var(--transition-base);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .job-card:hover {
+      border-color: var(--border-accent);
+      box-shadow: var(--shadow-card);
+      transform: translateX(4px);
+    }
+    .job-icon {
+      width: 56px; height: 56px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+    .job-info { flex: 1; min-width: 0; }
+    .job-title {
+      font-family: var(--font-heading);
+      font-size: 1.0625rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+    .job-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .job-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      background: var(--bg-glass);
+      border: 1px solid var(--border-color);
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+    }
+    .job-desc { font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6; }
+    .perk-card {
+      background: var(--bg-glass);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      text-align: center;
+      transition: all var(--transition-base);
+    }
+    .perk-card:hover {
+      border-color: var(--border-accent);
+      transform: translateY(-3px);
+    }
+    @media(max-width:768px) {
+      .job-card { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+<div class="scroll-progress" id="scroll-progress"></div>
+<nav class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="../index.html" class="navbar-logo"><div class="navbar-logo-icon">RF</div><div class="navbar-logo-text"><span class="navbar-logo-name">RiskFreeFeel</span><span class="navbar-logo-tagline">Technologies</span></div></a>
+    <ul class="navbar-links">
+      <li><a href="../index.html" class="navbar-link">Home</a></li>
+      <li><a href="about.html" class="navbar-link">About</a></li>
+      <li><a href="services.html" class="navbar-link">Services</a></li>
+      <li><a href="portfolio.html" class="navbar-link">Portfolio</a></li>
+      <li><a href="technologies.html" class="navbar-link">Technologies</a></li>
+      <li><a href="pricing.html" class="navbar-link">Pricing</a></li>
+      <li><a href="blog.html" class="navbar-link">Blog</a></li>
+      <li><a href="careers.html" class="navbar-link active">Careers</a></li>
+    </ul>
+    <div class="navbar-right">
+      <button class="theme-toggle" id="theme-toggle"><span class="theme-icon">☀️</span></button>
+      <a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a>
+      <button class="hamburger" id="hamburger"><span class="hamburger-bar"></span><span class="hamburger-bar"></span><span class="hamburger-bar"></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <ul class="mobile-menu-links">
+    <li><a href="../index.html" class="mobile-menu-link">🏠 Home</a></li>
+    <li><a href="about.html" class="mobile-menu-link">👥 About</a></li>
+    <li><a href="services.html" class="mobile-menu-link">⚡ Services</a></li>
+    <li><a href="portfolio.html" class="mobile-menu-link">💼 Portfolio</a></li>
+    <li><a href="technologies.html" class="mobile-menu-link">🔧 Technologies</a></li>
+    <li><a href="pricing.html" class="mobile-menu-link">💰 Pricing</a></li>
+    <li><a href="blog.html" class="mobile-menu-link">📝 Blog</a></li>
+    <li><a href="careers.html" class="mobile-menu-link active">🚀 Careers</a></li>
+    <li><a href="contact.html" class="mobile-menu-link">📩 Contact</a></li>
+  </ul>
+  <div class="mobile-menu-cta"><a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Get a Free Quote</a></div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="hero-bg-gradient" style="opacity:0.7;"></div>
+  <div class="hero-orb-1" style="opacity:0.4;"></div>
+  <div class="page-hero-inner">
+    <div class="page-hero-breadcrumb"><a href="../index.html">Home</a> <span>›</span> <span>Careers</span></div>
+    <div class="section-label" style="margin:0 auto 16px;">Join Our Team</div>
+    <h1 class="display-lg" style="margin-bottom:20px;">Build the Future<br/><span class="gradient-text">With Us</span></h1>
+    <p class="body-lg" style="max-width:560px;margin:0 auto;">We're looking for brilliant engineers, creative designers, and passionate problem-solvers who believe technology should make the world better — risk-free.</p>
+    <div style="display:flex;gap:16px;justify-content:center;margin-top:28px;flex-wrap:wrap;">
+      <span class="badge badge-green">🌍 Remote-Friendly</span>
+      <span class="badge badge-blue">💰 Competitive Pay</span>
+      <span class="badge badge-violet">📈 Fast Growth</span>
+      <span class="badge badge-gold">🎯 8 Open Positions</span>
+    </div>
+  </div>
+</section>
+
+<!-- COMPANY CULTURE -->
+<section class="section" id="culture">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Our Culture</div>
+      <h2 class="section-title">Why Engineers Love Working Here</h2>
+      <p class="section-subtitle">We've built a culture where great work is celebrated, innovation is encouraged, and every person grows.</p>
+      <div class="gradient-separator"></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;" class="reveal">
+      <div>
+        <div style="display:flex;flex-direction:column;gap:20px;">
+          <div style="display:flex;gap:16px;align-items:flex-start;">
+            <div style="width:44px;height:44px;border-radius:var(--radius-md);background:rgba(0,87,255,0.12);display:flex;align-items:center;justify-content:center;font-size:1.25rem;flex-shrink:0;">🚀</div>
+            <div><div class="heading-md" style="font-size:1rem;margin-bottom:4px;">Ownership Mentality</div><p class="body-sm">Every engineer owns their features end-to-end. No silos. Full accountability and pride in your work.</p></div>
+          </div>
+          <div style="display:flex;gap:16px;align-items:flex-start;">
+            <div style="width:44px;height:44px;border-radius:var(--radius-md);background:rgba(124,58,237,0.12);display:flex;align-items:center;justify-content:center;font-size:1.25rem;flex-shrink:0;">🎓</div>
+            <div><div class="heading-md" style="font-size:1rem;margin-bottom:4px;">Continuous Learning</div><p class="body-sm">$1,000/year learning budget, conference passes, internal tech talks, and access to every major course platform.</p></div>
+          </div>
+          <div style="display:flex;gap:16px;align-items:flex-start;">
+            <div style="width:44px;height:44px;border-radius:var(--radius-md);background:rgba(16,185,129,0.12);display:flex;align-items:center;justify-content:center;font-size:1.25rem;flex-shrink:0;">⚡</div>
+            <div><div class="heading-md" style="font-size:1rem;margin-bottom:4px;">Ship Real Products</div><p class="body-sm">Work on live apps used by thousands. Your code reaches production, not just test environments.</p></div>
+          </div>
+          <div style="display:flex;gap:16px;align-items:flex-start;">
+            <div style="width:44px;height:44px;border-radius:var(--radius-md);background:rgba(245,158,11,0.12);display:flex;align-items:center;justify-content:center;font-size:1.25rem;flex-shrink:0;">🌍</div>
+            <div><div class="heading-md" style="font-size:1rem;margin-bottom:4px;">Global Exposure</div><p class="body-sm">Work with clients from 15+ countries, diverse industries, and cutting-edge technology challenges.</p></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div style="background:var(--gradient-primary);border-radius:var(--radius-2xl);padding:2px;">
+          <div style="background:var(--bg-secondary);border-radius:calc(var(--radius-2xl) - 2px);padding:36px;">
+            <div style="font-size:3.5rem;text-align:center;margin-bottom:16px;">🏆</div>
+            <div class="heading-md" style="text-align:center;margin-bottom:24px;">What Our Team Says</div>
+            <div style="display:flex;flex-direction:column;gap:16px;">
+              <div style="background:var(--bg-glass);border:1px solid var(--border-color);border-radius:var(--radius-md);padding:16px;">
+                <p style="font-size:0.875rem;color:var(--text-secondary);font-style:italic;margin-bottom:8px;">"The best engineering culture I've worked in. Brilliant teammates, impactful work, and leadership that actually listens."</p>
+                <div style="font-size:0.8rem;font-weight:600;color:var(--brand-blue-light);">Vikram S. — Senior Flutter Dev</div>
+              </div>
+              <div style="background:var(--bg-glass);border:1px solid var(--border-color);border-radius:var(--radius-md);padding:16px;">
+                <p style="font-size:0.875rem;color:var(--text-secondary);font-style:italic;margin-bottom:8px;">"I've shipped 8 apps in 18 months. The learning curve is steep but so is the growth. Best career decision ever."</p>
+                <div style="font-size:0.8rem;font-weight:600;color:var(--brand-blue-light);">Meera R. — Mobile Engineer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERKS & BENEFITS -->
+<section class="section" id="perks" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Benefits</div>
+      <h2 class="section-title">Perks & Benefits</h2>
+      <p class="section-subtitle">We invest in your success, health, and happiness.</p>
+      <div class="gradient-separator"></div>
+    </div>
+    <div class="grid grid-4" style="gap:20px;">
+      <div class="perk-card reveal"><div style="font-size:2rem;margin-bottom:10px;">💰</div><div class="heading-md" style="font-size:0.9375rem;margin-bottom:4px;">Competitive Salary</div><p style="font-size:0.8rem;color:var(--text-muted);">Top 10% market rates reviewed annually</p></div>
+      <div class="perk-card reveal delay-100"><div style="font-size:2rem;margin-bottom:10px;">🏠</div><div class="heading-md" style="font-size:0.9375rem;margin-bottom:4px;">Remote-Friendly</div><p style="font-size:0.8rem;color:var(--text-muted);">Work from anywhere, flexible hours</p></div>
+      <div class="perk-card reveal delay-200"><div style="font-size:2rem;margin-bottom:10px;">🏥</div><div class="heading-md" style="font-size:0.9375rem;margin-bottom:4px;">Health Insurance</div><p style="font-size:0.8rem;color:var(--text-muted);">Full family coverage included</p></div>
+      <div class="perk-card reveal delay-300"><div style="font-size:2rem;margin-bottom:10px;">📚</div><div class="heading-md" style="font-size:0.9375rem;margin-bottom:4px;">Learning Budget</div><p style="font-size:0.8rem;color:var(--text-muted);">$1,000/year for courses, books & conferences</p></div>
+      <div class="perk-card reveal"><div style="font-size:2rem;margin-bottom:10px;">🎯</div><div class="heading-md" style="font-size:0.9375rem;margin-bottom:4px;">Performance Bonus</div><p style="font-size:0.8rem;color:var(--text-muted);">Quarterly bonuses based on impact</p></div>
+      <div class="perk-card reveal delay-100"><div style="font-size:2rem;margin-bottom:10px;">🖥️</div><div class="heading-md" style="font-size:0.9375rem;margin-bottom:4px;">Equipment Stipend</div><p style="font-size:0.8rem;color:var(--text-muted);">MacBook Pro + setup budget provided</p></div>
+      <div class="perk-card reveal delay-200"><div style="font-size:2rem;margin-bottom:10px;">🌴</div><div class="heading-md" style="font-size:0.9375rem;margin-bottom:4px;">Generous PTO</div><p style="font-size:0.8rem;color:var(--text-muted);">25 days off + local holidays</p></div>
+      <div class="perk-card reveal delay-300"><div style="font-size:2rem;margin-bottom:10px;">📈</div><div class="heading-md" style="font-size:0.9375rem;margin-bottom:4px;">Fast-Track Growth</div><p style="font-size:0.8rem;color:var(--text-muted);">Promotions based on skill, not seniority</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- OPEN POSITIONS -->
+<section class="section" id="positions">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Open Roles</div>
+      <h2 class="section-title">Current Openings</h2>
+      <p class="section-subtitle">8 positions open. We hire for talent, passion, and problem-solving ability above all else.</p>
+      <div class="gradient-separator"></div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:16px;">
+
+      <!-- Job 1 -->
+      <div class="job-card reveal">
+        <div class="job-icon" style="background:rgba(84,197,248,0.15);">💙</div>
+        <div class="job-info">
+          <div class="job-title">Senior Flutter Developer</div>
+          <div class="job-meta">
+            <span class="job-tag">🏢 Full-time</span>
+            <span class="job-tag">🌍 Remote</span>
+            <span class="job-tag">💰 ₹15L–₹25L / $30K–$60K</span>
+            <span class="badge badge-green" style="font-size:0.7rem;">Urgent</span>
+          </div>
+          <p class="job-desc">Lead Flutter development on client projects. 3+ years Flutter experience, BLoC/Riverpod mastery, Firebase proficiency. Clean architecture advocate.</p>
+        </div>
+        <a href="#apply" class="btn btn-primary btn-sm" style="flex-shrink:0;">Apply Now</a>
+      </div>
+
+      <!-- Job 2 -->
+      <div class="job-card reveal delay-100">
+        <div class="job-icon" style="background:rgba(51,153,51,0.15);">🟢</div>
+        <div class="job-info">
+          <div class="job-title">Node.js Backend Engineer</div>
+          <div class="job-meta">
+            <span class="job-tag">🏢 Full-time</span>
+            <span class="job-tag">🌍 Remote / Hybrid</span>
+            <span class="job-tag">💰 ₹12L–₹22L</span>
+          </div>
+          <p class="job-desc">Design and build scalable APIs for mobile and web applications. Node.js, Express/NestJS, PostgreSQL/MongoDB, Docker, and CI/CD experience required.</p>
+        </div>
+        <a href="#apply" class="btn btn-primary btn-sm" style="flex-shrink:0;">Apply Now</a>
+      </div>
+
+      <!-- Job 3 -->
+      <div class="job-card reveal">
+        <div class="job-icon" style="background:rgba(239,68,68,0.15);">🎨</div>
+        <div class="job-info">
+          <div class="job-title">Senior UI/UX Designer</div>
+          <div class="job-meta">
+            <span class="job-tag">🏢 Full-time</span>
+            <span class="job-tag">🌍 Remote</span>
+            <span class="job-tag">💰 ₹10L–₹18L</span>
+            <span class="badge badge-green" style="font-size:0.7rem;">New</span>
+          </div>
+          <p class="job-desc">Create stunning, user-centered designs for mobile and web applications. Figma expert, design systems experience, strong portfolio of shipped products required.</p>
+        </div>
+        <a href="#apply" class="btn btn-primary btn-sm" style="flex-shrink:0;">Apply Now</a>
+      </div>
+
+      <!-- Job 4 -->
+      <div class="job-card reveal delay-100">
+        <div class="job-icon" style="background:rgba(156,39,176,0.15);">🤖</div>
+        <div class="job-info">
+          <div class="job-title">AI/ML Engineer</div>
+          <div class="job-meta">
+            <span class="job-tag">🏢 Full-time</span>
+            <span class="job-tag">🌍 Remote</span>
+            <span class="job-tag">💰 ₹18L–₹30L</span>
+          </div>
+          <p class="job-desc">Build and integrate AI/ML features into client applications. Python, TensorFlow/PyTorch, OpenAI API, model fine-tuning, and production ML deployment experience needed.</p>
+        </div>
+        <a href="#apply" class="btn btn-primary btn-sm" style="flex-shrink:0;">Apply Now</a>
+      </div>
+
+      <!-- Job 5 -->
+      <div class="job-card reveal">
+        <div class="job-icon" style="background:rgba(61,220,132,0.15);">🤖</div>
+        <div class="job-info">
+          <div class="job-title">Android Developer (Kotlin)</div>
+          <div class="job-meta">
+            <span class="job-tag">🏢 Full-time</span>
+            <span class="job-tag">🌍 Remote</span>
+            <span class="job-tag">💰 ₹10L–₹20L</span>
+          </div>
+          <p class="job-desc">Native Android development with Kotlin, Jetpack Compose, Coroutines, MVVM. 2+ years experience with published Play Store apps required.</p>
+        </div>
+        <a href="#apply" class="btn btn-primary btn-sm" style="flex-shrink:0;">Apply Now</a>
+      </div>
+
+      <!-- Job 6 -->
+      <div class="job-card reveal delay-100">
+        <div class="job-icon" style="background:rgba(0,87,255,0.15);">💼</div>
+        <div class="job-info">
+          <div class="job-title">Project Manager / Scrum Master</div>
+          <div class="job-meta">
+            <span class="job-tag">🏢 Full-time</span>
+            <span class="job-tag">🌍 Remote</span>
+            <span class="job-tag">💰 ₹12L–₹20L</span>
+          </div>
+          <p class="job-desc">Manage multiple client projects simultaneously. Agile/Scrum certified, technical background preferred, excellent communication, Jira/Linear proficiency.</p>
+        </div>
+        <a href="#apply" class="btn btn-primary btn-sm" style="flex-shrink:0;">Apply Now</a>
+      </div>
+
+      <!-- Job 7 -->
+      <div class="job-card reveal">
+        <div class="job-icon" style="background:rgba(245,158,11,0.15);">📈</div>
+        <div class="job-info">
+          <div class="job-title">Business Development Executive</div>
+          <div class="job-meta">
+            <span class="job-tag">🏢 Full-time</span>
+            <span class="job-tag">🌍 Remote</span>
+            <span class="job-tag">💰 ₹8L–₹15L + Commission</span>
+            <span class="badge badge-green" style="font-size:0.7rem;">New</span>
+          </div>
+          <p class="job-desc">Drive business growth through lead generation, client meetings, and proposal development. IT sales background, strong English communication, and hunger to close deals.</p>
+        </div>
+        <a href="#apply" class="btn btn-primary btn-sm" style="flex-shrink:0;">Apply Now</a>
+      </div>
+
+      <!-- Job 8: Internship -->
+      <div class="job-card reveal delay-100">
+        <div class="job-icon" style="background:rgba(6,182,212,0.15);">🌱</div>
+        <div class="job-info">
+          <div class="job-title">Flutter Developer Intern</div>
+          <div class="job-meta">
+            <span class="job-tag">🎓 Internship</span>
+            <span class="job-tag">🌍 Remote</span>
+            <span class="job-tag">💰 ₹15K–₹25K/month</span>
+            <span class="badge badge-violet" style="font-size:0.7rem;">Multiple Openings</span>
+          </div>
+          <p class="job-desc">6-month paid internship for passionate Flutter learners. You'll ship real code on client projects, get mentored by senior engineers, and receive a full-time offer on completion.</p>
+        </div>
+        <a href="#apply" class="btn btn-primary btn-sm" style="flex-shrink:0;">Apply Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATION FORM -->
+<section class="section" id="apply" style="background:var(--bg-secondary);">
+  <div class="container" style="max-width:760px;">
+    <div class="section-header">
+      <div class="section-label">Apply Now</div>
+      <h2 class="section-title">Send Your Application</h2>
+      <p class="section-subtitle">Don't see a perfect match? Apply anyway — we hire for exceptional talent even when there's no open role.</p>
+      <div class="gradient-separator"></div>
+    </div>
+
+    <div class="contact-form-card">
+      <div class="form-success" id="form-success">
+        <span style="font-size:1.25rem;">✅</span>
+        <span>Application received! We'll review it and get back to you within 5 business days.</span>
+      </div>
+      <form id="contact-form">
+        <div class="contact-form-grid">
+          <div class="input-group"><label class="input-label" for="career-name">Full Name *</label><input type="text" id="career-name" class="input-field" placeholder="Your full name" required /></div>
+          <div class="input-group"><label class="input-label" for="career-email">Email *</label><input type="email" id="career-email" class="input-field" placeholder="you@email.com" required /></div>
+        </div>
+        <div class="contact-form-grid">
+          <div class="input-group"><label class="input-label" for="career-phone">Phone / WhatsApp</label><input type="tel" id="career-phone" class="input-field" placeholder="+91 98765 43210" /></div>
+          <div class="input-group"><label class="input-label" for="career-position">Position *</label>
+            <select id="career-position" class="input-field" required>
+              <option value="" disabled selected>Select position…</option>
+              <option>Senior Flutter Developer</option>
+              <option>Node.js Backend Engineer</option>
+              <option>Senior UI/UX Designer</option>
+              <option>AI/ML Engineer</option>
+              <option>Android Developer (Kotlin)</option>
+              <option>Project Manager / Scrum Master</option>
+              <option>Business Development Executive</option>
+              <option>Flutter Developer Intern</option>
+              <option>Other / Open Application</option>
+            </select>
+          </div>
+        </div>
+        <div class="contact-form-grid">
+          <div class="input-group"><label class="input-label" for="career-exp">Years of Experience</label>
+            <select id="career-exp" class="input-field">
+              <option value="" disabled selected>Select…</option>
+              <option>Fresher / 0-1 year</option>
+              <option>1-3 years</option>
+              <option>3-5 years</option>
+              <option>5-8 years</option>
+              <option>8+ years</option>
+            </select>
+          </div>
+          <div class="input-group"><label class="input-label" for="career-portfolio">Portfolio / GitHub / LinkedIn URL</label><input type="url" id="career-portfolio" class="input-field" placeholder="https://..." /></div>
+        </div>
+        <div class="contact-form-full">
+          <div class="input-group"><label class="input-label" for="career-message">Why RiskFreeFeel? Tell us about yourself *</label>
+            <textarea id="career-message" class="input-field" placeholder="Tell us about your experience, notable projects, why you want to join our team, and what makes you stand out..." required style="min-height:160px;"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">🚀 Submit Application</button>
+        <p style="text-align:center;font-size:0.8rem;color:var(--text-muted);margin-top:12px;">We review every application personally. Response within 5 business days.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="footer-inner"><div style="text-align:center;padding:20px 0;"><a href="../index.html" class="navbar-logo" style="justify-content:center;margin-bottom:12px;"><div class="navbar-logo-icon">RF</div><div class="navbar-logo-text"><span class="navbar-logo-name">RiskFreeFeel</span><span class="navbar-logo-tagline">Technologies</span></div></a><p style="color:var(--text-muted);font-size:0.875rem;">© 2024 RiskFreeFeel Technologies. All rights reserved.</p></div></div></footer>
+
+<div class="whatsapp-fab"><a href="https://wa.me/15551234567" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a><div class="whatsapp-tooltip">Chat on WhatsApp</div></div>
+<button id="back-to-top" style="position:fixed;bottom:32px;right:32px;z-index:300;width:44px;height:44px;border-radius:50%;background:var(--gradient-primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.1rem;border:none;cursor:pointer;opacity:0;pointer-events:none;transition:opacity 0.3s ease;">↑</button>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — RiskFreeFeel Technologies | Get a Free Quote</title>
+  <meta name="description" content="Contact RiskFreeFeel Technologies for your software project. Get a free consultation, request a quote, or chat on WhatsApp. We respond within 24 hours." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230057FF'/><text y='.9em' font-size='60' x='50%' text-anchor='middle' fill='white' font-weight='bold' dy='.1em'>R</text></svg>" />
+  <link rel="stylesheet" href="../assets/css/globals.css" />
+  <link rel="stylesheet" href="../assets/css/navbar.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+  <style>
+    .map-container {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      height: 300px;
+      background: var(--bg-glass);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .form-success {
+      display: none;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 20px;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: var(--radius-md);
+      color: #34D399;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="scroll-progress" id="scroll-progress"></div>
+
+<nav class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="../index.html" class="navbar-logo">
+      <div class="navbar-logo-icon">RF</div>
+      <div class="navbar-logo-text"><span class="navbar-logo-name">RiskFreeFeel</span><span class="navbar-logo-tagline">Technologies</span></div>
+    </a>
+    <ul class="navbar-links">
+      <li><a href="../index.html" class="navbar-link">Home</a></li>
+      <li><a href="about.html" class="navbar-link">About</a></li>
+      <li><a href="services.html" class="navbar-link">Services</a></li>
+      <li><a href="portfolio.html" class="navbar-link">Portfolio</a></li>
+      <li><a href="technologies.html" class="navbar-link">Technologies</a></li>
+      <li><a href="pricing.html" class="navbar-link">Pricing</a></li>
+      <li><a href="blog.html" class="navbar-link">Blog</a></li>
+      <li><a href="careers.html" class="navbar-link">Careers</a></li>
+    </ul>
+    <div class="navbar-right">
+      <button class="theme-toggle" id="theme-toggle"><span class="theme-icon">☀️</span></button>
+      <a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a>
+      <button class="hamburger" id="hamburger"><span class="hamburger-bar"></span><span class="hamburger-bar"></span><span class="hamburger-bar"></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <ul class="mobile-menu-links">
+    <li><a href="../index.html" class="mobile-menu-link">🏠 Home</a></li>
+    <li><a href="about.html" class="mobile-menu-link">👥 About</a></li>
+    <li><a href="services.html" class="mobile-menu-link">⚡ Services</a></li>
+    <li><a href="portfolio.html" class="mobile-menu-link">💼 Portfolio</a></li>
+    <li><a href="technologies.html" class="mobile-menu-link">🔧 Technologies</a></li>
+    <li><a href="pricing.html" class="mobile-menu-link">💰 Pricing</a></li>
+    <li><a href="blog.html" class="mobile-menu-link">📝 Blog</a></li>
+    <li><a href="careers.html" class="mobile-menu-link">🚀 Careers</a></li>
+    <li><a href="contact.html" class="mobile-menu-link active">📩 Contact</a></li>
+  </ul>
+  <div class="mobile-menu-cta"><a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Get a Free Quote</a></div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="hero-bg-gradient" style="opacity:0.7;"></div>
+  <div class="hero-orb-1" style="opacity:0.4;"></div>
+  <div class="hero-orb-2" style="opacity:0.4;"></div>
+  <div class="page-hero-inner">
+    <div class="page-hero-breadcrumb">
+      <a href="../index.html">Home</a> <span>›</span> <span>Contact Us</span>
+    </div>
+    <div class="section-label" style="margin:0 auto 16px;">Let's Talk</div>
+    <h1 class="display-lg" style="margin-bottom:20px;">
+      Start Your <span class="gradient-text">Journey</span><br/>With Us Today
+    </h1>
+    <p class="body-lg" style="max-width:560px;margin:0 auto;">Have a project in mind? We'd love to hear about it. Get a free consultation and project estimate from our expert team.</p>
+    <div style="display:flex;gap:16px;justify-content:center;margin-top:28px;flex-wrap:wrap;">
+      <span class="badge badge-green">✓ Free Consultation</span>
+      <span class="badge badge-blue">✓ 24-Hour Response</span>
+      <span class="badge badge-violet">✓ No Obligation</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT MAIN SECTION -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Left: Contact Info -->
+      <div>
+        <div class="section-label" style="margin-bottom:16px;">Get in Touch</div>
+        <h2 class="section-title" style="text-align:left;margin-bottom:8px;">We're Here to Help</h2>
+        <p class="body-md" style="margin-bottom:32px;">Choose the fastest way to reach us. Our team is available 24/7 for urgent inquiries and typically responds to all messages within 24 hours.</p>
+
+        <a href="tel:+15551234567" class="contact-info-card">
+          <div class="contact-info-icon" style="background:rgba(0,87,255,0.12);">📞</div>
+          <div>
+            <div class="contact-info-label">Call Us</div>
+            <div class="contact-info-value">+1 (555) 123-4567</div>
+            <div style="font-size:0.8rem;color:var(--text-muted);margin-top:2px;">Mon–Fri, 9AM–7PM IST</div>
+          </div>
+        </a>
+
+        <a href="mailto:info@riskfreefeel.com" class="contact-info-card">
+          <div class="contact-info-icon" style="background:rgba(124,58,237,0.12);">📧</div>
+          <div>
+            <div class="contact-info-label">Email Us</div>
+            <div class="contact-info-value">info@riskfreefeel.com</div>
+            <div style="font-size:0.8rem;color:var(--text-muted);margin-top:2px;">Response within 24 hours</div>
+          </div>
+        </a>
+
+        <a href="https://wa.me/15551234567?text=Hi! I'm interested in your services." class="contact-info-card" target="_blank" rel="noopener">
+          <div class="contact-info-icon" style="background:rgba(37,211,102,0.12);">💬</div>
+          <div>
+            <div class="contact-info-label">WhatsApp</div>
+            <div class="contact-info-value">+1 (555) 123-4567</div>
+            <div style="font-size:0.8rem;color:var(--text-muted);margin-top:2px;">Instant messaging available</div>
+          </div>
+        </a>
+
+        <div class="contact-info-card" style="cursor:default;">
+          <div class="contact-info-icon" style="background:rgba(16,185,129,0.12);">📍</div>
+          <div>
+            <div class="contact-info-label">Location</div>
+            <div class="contact-info-value">India — Remote Worldwide</div>
+            <div style="font-size:0.8rem;color:var(--text-muted);margin-top:2px;">Serving clients in 15+ countries</div>
+          </div>
+        </div>
+
+        <!-- Google Map Embed Placeholder -->
+        <div class="map-container">
+          <div style="font-size:3rem;">🗺️</div>
+          <div class="heading-md">Find Us on Map</div>
+          <p style="font-size:0.875rem;color:var(--text-muted);text-align:center;max-width:260px;">Replace this with a Google Maps embed using your actual office address.</p>
+          <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Open in Maps →</a>
+        </div>
+
+        <!-- Office Hours -->
+        <div class="card" style="padding:24px;margin-top:24px;">
+          <div class="heading-md" style="margin-bottom:16px;">🕐 Office Hours</div>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="display:flex;justify-content:space-between;font-size:0.875rem;">
+              <span style="color:var(--text-secondary);">Monday – Friday</span>
+              <span style="color:var(--text-primary);font-weight:500;">9:00 AM – 7:00 PM IST</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:0.875rem;">
+              <span style="color:var(--text-secondary);">Saturday</span>
+              <span style="color:var(--text-primary);font-weight:500;">10:00 AM – 4:00 PM IST</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:0.875rem;">
+              <span style="color:var(--text-secondary);">Sunday</span>
+              <span style="color:#EF4444;font-weight:500;">Closed</span>
+            </div>
+            <div class="divider" style="margin:8px 0;"></div>
+            <div style="font-size:0.8125rem;color:var(--text-muted);">
+              🌍 We work across time zones for international clients. Flexible meeting slots available.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Contact Form -->
+      <div>
+        <div class="contact-form-card">
+          <div class="section-label" style="margin-bottom:16px;">Project Inquiry</div>
+          <h2 class="heading-lg" style="margin-bottom:8px;">Tell Us About Your Project</h2>
+          <p class="body-sm" style="margin-bottom:28px;">Fill out the form below and we'll get back to you with a detailed proposal and timeline estimate within 24 hours.</p>
+
+          <div class="form-success" id="form-success">
+            <span style="font-size:1.25rem;">✅</span>
+            <span>Thank you! Your message has been sent. We'll contact you within 24 hours.</span>
+          </div>
+
+          <form id="contact-form" novalidate>
+            <div class="contact-form-grid">
+              <div class="input-group">
+                <label class="input-label" for="cf-name">Full Name *</label>
+                <input type="text" id="cf-name" name="name" class="input-field" placeholder="John Doe" required />
+              </div>
+              <div class="input-group">
+                <label class="input-label" for="cf-email">Email Address *</label>
+                <input type="email" id="cf-email" name="email" class="input-field" placeholder="john@company.com" required />
+              </div>
+            </div>
+
+            <div class="contact-form-grid">
+              <div class="input-group">
+                <label class="input-label" for="cf-phone">Phone / WhatsApp</label>
+                <input type="tel" id="cf-phone" name="phone" class="input-field" placeholder="+1 (555) 000-0000" />
+              </div>
+              <div class="input-group">
+                <label class="input-label" for="cf-company">Company Name</label>
+                <input type="text" id="cf-company" name="company" class="input-field" placeholder="Acme Corp" />
+              </div>
+            </div>
+
+            <div class="contact-form-full">
+              <div class="input-group">
+                <label class="input-label" for="cf-service">Service Required *</label>
+                <select id="cf-service" name="service" class="input-field" required>
+                  <option value="" disabled selected>Select a service…</option>
+                  <option value="mobile">📱 Mobile App Development</option>
+                  <option value="enterprise">🏢 Enterprise Software</option>
+                  <option value="custom">⚙️ Custom Business Software</option>
+                  <option value="ecommerce">🛒 E-Commerce Development</option>
+                  <option value="web">🌐 Website Development</option>
+                  <option value="uiux">🎨 UI/UX Design</option>
+                  <option value="api">🔌 Backend API Development</option>
+                  <option value="cloud">☁️ Cloud Integration</option>
+                  <option value="ai">🤖 AI-Powered Solutions</option>
+                  <option value="maintenance">🛠️ Maintenance & Support</option>
+                  <option value="training">📚 Technical Training</option>
+                  <option value="other">🤝 Other / Multiple Services</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="contact-form-full">
+              <div class="input-group">
+                <label class="input-label" for="cf-budget">Estimated Budget</label>
+                <select id="cf-budget" name="budget" class="input-field">
+                  <option value="" disabled selected>Select budget range…</option>
+                  <option value="500-1000">$500 – $1,000</option>
+                  <option value="1000-5000">$1,000 – $5,000</option>
+                  <option value="5000-15000">$5,000 – $15,000</option>
+                  <option value="15000-50000">$15,000 – $50,000</option>
+                  <option value="50000+">$50,000+ (Enterprise)</option>
+                  <option value="discuss">Let's discuss</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="contact-form-full">
+              <div class="input-group">
+                <label class="input-label" for="cf-message">Project Details *</label>
+                <textarea id="cf-message" name="message" class="input-field" placeholder="Tell us about your project: What do you need? Who is your target audience? What's your timeline? Any specific features or requirements?" required style="min-height:160px;"></textarea>
+              </div>
+            </div>
+
+            <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:24px;">
+              <input type="checkbox" id="cf-consent" name="consent" required style="margin-top:3px;accent-color:var(--brand-blue);" />
+              <label for="cf-consent" style="font-size:0.8125rem;color:var(--text-muted);line-height:1.5;">
+                I agree to the <a href="#" style="color:var(--brand-blue-light);">Privacy Policy</a> and consent to RiskFreeFeel Technologies contacting me about my inquiry.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">
+              🚀 Send Message & Get Free Quote
+            </button>
+
+            <p style="text-align:center;font-size:0.8rem;color:var(--text-muted);margin-top:16px;">
+              🔒 Your data is secure. We never spam. Unsubscribe anytime.
+            </p>
+          </form>
+        </div>
+
+        <!-- Trust Badges -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px;">
+          <div class="card" style="padding:20px;text-align:center;">
+            <div style="font-size:1.75rem;margin-bottom:8px;">⚡</div>
+            <div style="font-size:0.875rem;font-weight:600;color:var(--text-primary);">Fast Response</div>
+            <div style="font-size:0.75rem;color:var(--text-muted);">Within 24 hours</div>
+          </div>
+          <div class="card" style="padding:20px;text-align:center;">
+            <div style="font-size:1.75rem;margin-bottom:8px;">🔒</div>
+            <div style="font-size:0.875rem;font-weight:600;color:var(--text-primary);">NDA Available</div>
+            <div style="font-size:0.75rem;color:var(--text-muted);">Full confidentiality</div>
+          </div>
+          <div class="card" style="padding:20px;text-align:center;">
+            <div style="font-size:1.75rem;margin-bottom:8px;">💰</div>
+            <div style="font-size:0.875rem;font-weight:600;color:var(--text-primary);">Free Quote</div>
+            <div style="font-size:0.75rem;color:var(--text-muted);">No obligations</div>
+          </div>
+          <div class="card" style="padding:20px;text-align:center;">
+            <div style="font-size:1.75rem;margin-bottom:8px;">🌍</div>
+            <div style="font-size:0.875rem;font-weight:600;color:var(--text-primary);">Global Clients</div>
+            <div style="font-size:0.75rem;color:var(--text-muted);">15+ countries served</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section" style="background:var(--bg-secondary);" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="gradient-separator"></div>
+    </div>
+    <div style="max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:16px;">
+      <details class="card reveal" style="padding:0;" open>
+        <summary style="padding:20px 24px;cursor:pointer;font-weight:600;color:var(--text-primary);list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          How long does it take to build a mobile app?
+          <span style="color:var(--brand-blue-light);font-size:1.25rem;transition:transform 0.3s;">+</span>
+        </summary>
+        <div style="padding:0 24px 20px;color:var(--text-secondary);font-size:0.9375rem;line-height:1.7;">A typical mobile app takes 8-16 weeks depending on complexity. Simple apps: 6-8 weeks. Mid-complexity: 10-14 weeks. Enterprise-grade: 16-24 weeks. We always provide a detailed timeline after discovery.</div>
+      </details>
+      <details class="card reveal delay-100" style="padding:0;">
+        <summary style="padding:20px 24px;cursor:pointer;font-weight:600;color:var(--text-primary);list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          What is your pricing model?
+          <span style="color:var(--brand-blue-light);font-size:1.25rem;">+</span>
+        </summary>
+        <div style="padding:0 24px 20px;color:var(--text-secondary);font-size:0.9375rem;line-height:1.7;">We offer fixed-price packages for defined projects and time-&-material billing for ongoing work. Payment is milestone-based — you only pay when you approve each deliverable. View our Pricing page for detailed plans.</div>
+      </details>
+      <details class="card reveal delay-200" style="padding:0;">
+        <summary style="padding:20px 24px;cursor:pointer;font-weight:600;color:var(--text-primary);list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          Do you provide source code ownership?
+          <span style="color:var(--brand-blue-light);font-size:1.25rem;">+</span>
+        </summary>
+        <div style="padding:0 24px 20px;color:var(--text-secondary);font-size:0.9375rem;line-height:1.7;">Absolutely. 100% of the source code belongs to you upon final payment. We transfer all code, assets, and documentation. No vendor lock-in, ever. You get full intellectual property rights.</div>
+      </details>
+      <details class="card reveal delay-300" style="padding:0;">
+        <summary style="padding:20px 24px;cursor:pointer;font-weight:600;color:var(--text-primary);list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          Do you sign NDAs?
+          <span style="color:var(--brand-blue-light);font-size:1.25rem;">+</span>
+        </summary>
+        <div style="padding:0 24px 20px;color:var(--text-secondary);font-size:0.9375rem;line-height:1.7;">Yes, we sign NDA agreements before any sensitive discussions. Your business ideas and data are fully protected. We take confidentiality extremely seriously and have a clean track record in this regard.</div>
+      </details>
+      <details class="card reveal delay-400" style="padding:0;">
+        <summary style="padding:20px 24px;cursor:pointer;font-weight:600;color:var(--text-primary);list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          What post-launch support do you provide?
+          <span style="color:var(--brand-blue-light);font-size:1.25rem;">+</span>
+        </summary>
+        <div style="padding:0 24px 20px;color:var(--text-secondary);font-size:0.9375rem;line-height:1.7;">All projects include 6 months of free maintenance — bug fixes, security patches, and minor updates. After that, we offer flexible support retainer plans. Our 24/7 monitoring ensures your product is always online.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div style="text-align:center;padding:20px 0;">
+      <a href="../index.html" class="navbar-logo" style="justify-content:center;margin-bottom:12px;">
+        <div class="navbar-logo-icon">RF</div>
+        <div class="navbar-logo-text"><span class="navbar-logo-name">RiskFreeFeel</span><span class="navbar-logo-tagline">Technologies</span></div>
+      </a>
+      <p style="color:var(--text-muted);font-size:0.875rem;">© 2024 RiskFreeFeel Technologies. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="whatsapp-fab">
+  <a href="https://wa.me/15551234567" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <div class="whatsapp-tooltip">Chat on WhatsApp</div>
+</div>
+<button id="back-to-top" style="position:fixed;bottom:32px;right:32px;z-index:300;width:44px;height:44px;border-radius:50%;background:var(--gradient-primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.1rem;border:none;cursor:pointer;opacity:0;pointer-events:none;transition:opacity 0.3s ease;">↑</button>
+
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

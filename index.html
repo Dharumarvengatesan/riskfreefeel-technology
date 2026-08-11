@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO Meta Tags -->
+  <title>RiskFreeFeel Technologies — Solution Without Risk, Success Without Stress</title>
+  <meta name="description" content="RiskFreeFeel Technologies is a world-class AI-powered software company specializing in mobile app development, enterprise software, AI solutions, and digital transformation. We deliver innovation without risk." />
+  <meta name="keywords" content="mobile app development, Flutter, Android, iOS, enterprise software, AI solutions, web development, e-commerce, RiskFreeFeel Technologies" />
+  <meta name="author" content="RiskFreeFeel Technologies" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://riskfreefeel.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="RiskFreeFeel Technologies — World-Class Software Solutions" />
+  <meta property="og:description" content="Solution without risk, success without stress. AI-powered software development company delivering world-class mobile apps, enterprise solutions, and digital transformation." />
+  <meta property="og:url" content="https://riskfreefeel.com/" />
+  <meta property="og:site_name" content="RiskFreeFeel Technologies" />
+  <meta property="og:image" content="https://riskfreefeel.com/assets/images/og-cover.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="RiskFreeFeel Technologies" />
+  <meta name="twitter:description" content="Solution without risk, success without stress." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230057FF'/><text y='.9em' font-size='60' x='50%' text-anchor='middle' fill='white' font-weight='bold' dy='.1em'>R</text></svg>" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/globals.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RiskFreeFeel Technologies",
+    "url": "https://riskfreefeel.com",
+    "description": "World-class AI-powered software development company",
+    "foundingDate": "2019",
+    "address": { "@type": "PostalAddress", "addressCountry": "IN" },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "email": "info@riskfreefeel.com"
+    },
+    "sameAs": [
+      "https://linkedin.com/company/riskfreefeel",
+      "https://twitter.com/riskfreefeel"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress" id="scroll-progress"></div>
+
+<!-- ── NAVBAR ─────────────────────────────────────────────── -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="navbar-inner">
+    <!-- Logo -->
+    <a href="index.html" class="navbar-logo" aria-label="RiskFreeFeel Technologies Home">
+      <div class="navbar-logo-icon" aria-hidden="true">RF</div>
+      <div class="navbar-logo-text">
+        <span class="navbar-logo-name">RiskFreeFeel</span>
+        <span class="navbar-logo-tagline">Technologies</span>
+      </div>
+    </a>
+
+    <!-- Desktop Nav Links -->
+    <ul class="navbar-links" role="list">
+      <li><a href="index.html" class="navbar-link active">Home</a></li>
+      <li><a href="pages/about.html" class="navbar-link">About</a></li>
+      <li class="navbar-dropdown">
+        <a href="pages/services.html" class="navbar-link">Services ▾</a>
+        <div class="navbar-dropdown-menu">
+          <a href="pages/services.html#mobile" class="navbar-dropdown-item">📱 Mobile Apps</a>
+          <a href="pages/services.html#enterprise" class="navbar-dropdown-item">🏢 Enterprise</a>
+          <a href="pages/services.html#web" class="navbar-dropdown-item">🌐 Web Dev</a>
+          <a href="pages/services.html#ai" class="navbar-dropdown-item">🤖 AI Solutions</a>
+          <a href="pages/services.html#uiux" class="navbar-dropdown-item">🎨 UI/UX Design</a>
+          <a href="pages/services.html#cloud" class="navbar-dropdown-item">☁️ Cloud</a>
+        </div>
+      </li>
+      <li><a href="pages/portfolio.html" class="navbar-link">Portfolio</a></li>
+      <li><a href="pages/technologies.html" class="navbar-link">Technologies</a></li>
+      <li><a href="pages/pricing.html" class="navbar-link">Pricing</a></li>
+      <li><a href="pages/blog.html" class="navbar-link">Blog</a></li>
+      <li><a href="pages/careers.html" class="navbar-link">Careers</a></li>
+    </ul>
+
+    <!-- Right Controls -->
+    <div class="navbar-right">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">
+        <span class="theme-icon">☀️</span>
+      </button>
+      <a href="pages/contact.html" class="btn btn-primary btn-sm" id="nav-cta">Get a Quote</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <nav>
+    <ul class="mobile-menu-links" role="list">
+      <li><a href="index.html" class="mobile-menu-link active">🏠 Home</a></li>
+      <li><a href="pages/about.html" class="mobile-menu-link">👥 About Us</a></li>
+      <li><a href="pages/services.html" class="mobile-menu-link">⚡ Services</a></li>
+      <li><a href="pages/portfolio.html" class="mobile-menu-link">💼 Portfolio</a></li>
+      <li><a href="pages/technologies.html" class="mobile-menu-link">🔧 Technologies</a></li>
+      <li><a href="pages/pricing.html" class="mobile-menu-link">💰 Pricing</a></li>
+      <li><a href="pages/blog.html" class="mobile-menu-link">📝 Blog</a></li>
+      <li><a href="pages/careers.html" class="mobile-menu-link">🚀 Careers</a></li>
+      <li><a href="pages/contact.html" class="mobile-menu-link">📩 Contact</a></li>
+    </ul>
+    <div class="mobile-menu-cta">
+      <a href="pages/contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Get a Free Quote</a>
+    </div>
+    <div style="margin-top:24px;text-align:center;">
+      <button class="theme-toggle" aria-label="Toggle theme" style="margin:0 auto;">
+        <span class="theme-icon">☀️</span>
+      </button>
+    </div>
+  </nav>
+</div>
+
+<!-- ── HERO SECTION ────────────────────────────────────────── -->
+<section class="hero-section" id="home" aria-labelledby="hero-title">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-bg-gradient" aria-hidden="true"></div>
+  <div class="hero-orb-1" aria-hidden="true"></div>
+  <div class="hero-orb-2" aria-hidden="true"></div>
+
+  <div class="hero-inner container" style="max-width:1280px;margin:0 auto;width:100%;">
+    <!-- Content -->
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        🏆 #1 AI-Powered Software Company
+      </div>
+
+      <h1 class="hero-title" id="hero-title">
+        Transforming Ideas Into<br />
+        <span class="hero-typewriter-wrap">
+          <span id="typewriter" class="hero-typewriter gradient-text"
+            data-phrases='["World-Class Apps","Enterprise Software","AI-Powered Solutions","Digital Experiences","The Future"]'>
+            World-Class Apps
+          </span>
+        </span>
+      </h1>
+
+      <p class="hero-subtitle">
+        <strong>RiskFreeFeel Technologies</strong> — Where innovation meets reliability. We build premium mobile apps, enterprise software, and AI solutions that deliver results. <em>Solution without risk, success without stress.</em>
+      </p>
+
+      <div class="hero-cta">
+        <a href="pages/contact.html" class="btn btn-primary btn-lg" id="hero-cta-primary">
+          🚀 Start Your Project
+        </a>
+        <a href="pages/portfolio.html" class="btn btn-outline btn-lg" id="hero-cta-portfolio">
+          View Our Work →
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-value" data-counter data-target="200" data-suffix="+">200+</div>
+          <div class="hero-stat-label">Projects Delivered</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value" data-counter data-target="50" data-suffix="+">50+</div>
+          <div class="hero-stat-label">Happy Clients</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value" data-counter data-target="5" data-suffix="+">5+</div>
+          <div class="hero-stat-label">Years Experience</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value" data-counter data-target="99" data-suffix="%">99%</div>
+          <div class="hero-stat-label">Client Satisfaction</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Visual Cards -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-device-mockup">
+        <div class="hero-service-card">
+          <div class="hero-service-icon" style="background:rgba(0,87,255,0.15);">📱</div>
+          <div class="hero-service-title">Mobile App Development</div>
+        </div>
+        <div class="hero-service-card">
+          <div class="hero-service-icon" style="background:rgba(124,58,237,0.15);">🤖</div>
+          <div class="hero-service-title">AI-Powered Solutions</div>
+        </div>
+        <div class="hero-service-card">
+          <div class="hero-service-icon" style="background:rgba(6,182,212,0.15);">☁️</div>
+          <div class="hero-service-title">Cloud Integration</div>
+        </div>
+        <div class="hero-service-card">
+          <div class="hero-service-icon" style="background:rgba(16,185,129,0.15);">🏢</div>
+          <div class="hero-service-title">Enterprise Software</div>
+        </div>
+        <div class="hero-service-card">
+          <div class="hero-service-icon" style="background:rgba(245,158,11,0.15);">🎨</div>
+          <div class="hero-service-title">UI/UX Design</div>
+        </div>
+        <div class="hero-service-card">
+          <div class="hero-service-icon" style="background:rgba(239,68,68,0.15);">🌐</div>
+          <div class="hero-service-title">Web Development</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div style="position:absolute;bottom:32px;left:50%;transform:translateX(-50%);z-index:1;text-align:center;animation:float 2s ease-in-out infinite;" aria-hidden="true">
+    <div style="font-size:0.75rem;color:var(--text-muted);margin-bottom:8px;letter-spacing:0.1em;text-transform:uppercase;">Scroll to explore</div>
+    <div style="width:24px;height:40px;border:2px solid var(--border-glass);border-radius:12px;margin:0 auto;display:flex;align-items:flex-start;justify-content:center;padding:6px;">
+      <div style="width:4px;height:8px;background:var(--brand-blue);border-radius:2px;animation:float 1.5s ease-in-out infinite;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── STATS BAR ───────────────────────────────────────────── -->
+<section class="stats-section" id="stats" aria-label="Company statistics">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <div class="stat-number" data-counter data-target="200" data-suffix="+">200+</div>
+        <div class="stat-label">Projects Delivered</div>
+        <div class="stat-sub">Across 15+ countries</div>
+      </div>
+      <div class="stat-item reveal delay-100">
+        <div class="stat-number" data-counter data-target="50" data-suffix="+">50+</div>
+        <div class="stat-label">Happy Clients</div>
+        <div class="stat-sub">Startups to enterprises</div>
+      </div>
+      <div class="stat-item reveal delay-200">
+        <div class="stat-number" data-counter data-target="5" data-suffix="+">5+</div>
+        <div class="stat-label">Years of Excellence</div>
+        <div class="stat-sub">Industry proven</div>
+      </div>
+      <div class="stat-item reveal delay-300">
+        <div class="stat-number" data-counter data-target="99" data-suffix="%">99%</div>
+        <div class="stat-label">Client Satisfaction</div>
+        <div class="stat-sub">4.9★ average rating</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY CHOOSE US ───────────────────────────────────────── -->
+<section class="section" id="why-us" aria-labelledby="why-title">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Why RiskFreeFeel</div>
+      <h2 class="section-title" id="why-title">Why World-Class Companies<br />Choose Us</h2>
+      <p class="section-subtitle">We combine cutting-edge technology with proven methodologies to deliver solutions that exceed expectations — every time.</p>
+      <div class="gradient-separator"></div>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon" style="background:rgba(0,87,255,0.12);">🛡️</div>
+        <h3 class="why-title">Zero-Risk Delivery</h3>
+        <p class="why-desc">Our structured development process, milestone-based billing, and money-back guarantee ensure you never lose. That's our promise.</p>
+      </div>
+      <div class="why-card reveal delay-100">
+        <div class="why-icon" style="background:rgba(124,58,237,0.12);">⚡</div>
+        <h3 class="why-title">Lightning-Fast Development</h3>
+        <p class="why-desc">Agile sprints, CI/CD pipelines, and a battle-tested team deliver production-ready software in record time without sacrificing quality.</p>
+      </div>
+      <div class="why-card reveal delay-200">
+        <div class="why-icon" style="background:rgba(6,182,212,0.12);">🤖</div>
+        <h3 class="why-title">AI-First Approach</h3>
+        <p class="why-desc">Every solution is powered by intelligent algorithms. From smart recommendations to predictive analytics, we embed AI at the core.</p>
+      </div>
+      <div class="why-card reveal delay-300">
+        <div class="why-icon" style="background:rgba(16,185,129,0.12);">🌍</div>
+        <h3 class="why-title">Global Standards</h3>
+        <p class="why-desc">ISO-quality processes, GDPR compliance, and international coding standards ensure your product competes on the world stage.</p>
+      </div>
+      <div class="why-card reveal delay-400">
+        <div class="why-icon" style="background:rgba(245,158,11,0.12);">🔧</div>
+        <h3 class="why-title">Dedicated Support</h3>
+        <p class="why-desc">24/7 technical support, dedicated project managers, and 6-month free maintenance keep your software running flawlessly post-launch.</p>
+      </div>
+      <div class="why-card reveal delay-500">
+        <div class="why-icon" style="background:rgba(239,68,68,0.12);">📈</div>
+        <h3 class="why-title">Measurable ROI</h3>
+        <p class="why-desc">Data-driven decisions and performance tracking ensure every dollar invested delivers measurable business impact and growth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES SECTION ────────────────────────────────────── -->
+<section class="section" id="services" style="background:var(--bg-secondary);" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Our Services</div>
+      <h2 class="section-title" id="services-title">Comprehensive Technology<br />Solutions</h2>
+      <p class="section-subtitle">From mobile apps to enterprise platforms — we cover the full spectrum of digital transformation.</p>
+      <div class="gradient-separator"></div>
+    </div>
+
+    <div class="services-grid">
+      <!-- Service 1 -->
+      <div class="service-card reveal">
+        <div class="service-icon" style="background:rgba(0,87,255,0.12);">📱</div>
+        <h3 class="service-title">Cross-Platform Mobile Development</h3>
+        <p class="service-desc">One codebase, both platforms. We build beautiful, high-performance Flutter apps for Android and iOS that feel truly native.</p>
+        <a href="pages/services.html#mobile" class="service-link">Learn more →</a>
+      </div>
+      <!-- Service 2 -->
+      <div class="service-card reveal delay-100">
+        <div class="service-icon" style="background:rgba(124,58,237,0.12);">🏢</div>
+        <h3 class="service-title">Enterprise Application Development</h3>
+        <p class="service-desc">Scalable, secure, and mission-critical enterprise solutions built to handle millions of users and complex business workflows.</p>
+        <a href="pages/services.html#enterprise" class="service-link">Learn more →</a>
+      </div>
+      <!-- Service 3 -->
+      <div class="service-card reveal delay-200">
+        <div class="service-icon" style="background:rgba(6,182,212,0.12);">⚙️</div>
+        <h3 class="service-title">Custom Business Software</h3>
+        <p class="service-desc">Tailor-made ERP, CRM, HRM, and workflow automation tools designed precisely for your business processes.</p>
+        <a href="pages/services.html#custom" class="service-link">Learn more →</a>
+      </div>
+      <!-- Service 4 -->
+      <div class="service-card reveal delay-300">
+        <div class="service-icon" style="background:rgba(16,185,129,0.12);">🛒</div>
+        <h3 class="service-title">E-Commerce Development</h3>
+        <p class="service-desc">Revenue-driving e-commerce platforms with seamless UX, payment gateways, inventory management, and analytics dashboards.</p>
+        <a href="pages/services.html#ecommerce" class="service-link">Learn more →</a>
+      </div>
+      <!-- Service 5 -->
+      <div class="service-card reveal">
+        <div class="service-icon" style="background:rgba(245,158,11,0.12);">🌐</div>
+        <h3 class="service-title">Dynamic Website Development</h3>
+        <p class="service-desc">Blazing-fast, SEO-optimized, and visually stunning websites that convert visitors into loyal customers.</p>
+        <a href="pages/services.html#web" class="service-link">Learn more →</a>
+      </div>
+      <!-- Service 6 -->
+      <div class="service-card reveal delay-100">
+        <div class="service-icon" style="background:rgba(239,68,68,0.12);">🎨</div>
+        <h3 class="service-title">UI/UX Design</h3>
+        <p class="service-desc">Human-centered design that delights users. From wireframes to pixel-perfect interfaces with accessibility-first principles.</p>
+        <a href="pages/services.html#uiux" class="service-link">Learn more →</a>
+      </div>
+      <!-- Service 7 -->
+      <div class="service-card reveal delay-200">
+        <div class="service-icon" style="background:rgba(0,87,255,0.12);">🔌</div>
+        <h3 class="service-title">Backend API Development</h3>
+        <p class="service-desc">Robust RESTful & GraphQL APIs with Node.js, microservices architecture, and enterprise-grade security standards.</p>
+        <a href="pages/services.html#api" class="service-link">Learn more →</a>
+      </div>
+      <!-- Service 8 -->
+      <div class="service-card reveal delay-300">
+        <div class="service-icon" style="background:rgba(124,58,237,0.12);">☁️</div>
+        <h3 class="service-title">Cloud Integration</h3>
+        <p class="service-desc">AWS, GCP, Firebase, and Azure integrations for infinitely scalable, reliable, and cost-optimized cloud infrastructure.</p>
+        <a href="pages/services.html#cloud" class="service-link">Learn more →</a>
+      </div>
+      <!-- Service 9 -->
+      <div class="service-card reveal">
+        <div class="service-icon" style="background:rgba(6,182,212,0.12);">🤖</div>
+        <h3 class="service-title">AI-Powered Solutions</h3>
+        <p class="service-desc">Machine learning, NLP, computer vision, and generative AI integrations that give your product an intelligent competitive edge.</p>
+        <a href="pages/services.html#ai" class="service-link">Learn more →</a>
+      </div>
+      <!-- Service 10 -->
+      <div class="service-card reveal delay-100">
+        <div class="service-icon" style="background:rgba(16,185,129,0.12);">🛠️</div>
+        <h3 class="service-title">Software Maintenance & Support</h3>
+        <p class="service-desc">Proactive monitoring, bug fixes, performance optimization, and feature enhancements to keep your software peak-performing.</p>
+        <a href="pages/services.html#maintenance" class="service-link">Learn more →</a>
+      </div>
+      <!-- Service 11 -->
+      <div class="service-card reveal delay-200">
+        <div class="service-icon" style="background:rgba(245,158,11,0.12);">📚</div>
+        <h3 class="service-title">Online Technical Training</h3>
+        <p class="service-desc">Expert-led courses in Flutter, mobile development, backend, cloud, and AI to upskill your team or kickstart your tech career.</p>
+        <a href="pages/services.html#training" class="service-link">Learn more →</a>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:48px;">
+      <a href="pages/services.html" class="btn btn-outline btn-lg">Explore All Services →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── TECHNOLOGIES SECTION ────────────────────────────────── -->
+<section class="section" id="technologies" aria-labelledby="tech-title">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Tech Stack</div>
+      <h2 class="section-title" id="tech-title">Technologies We Master</h2>
+      <p class="section-subtitle">A carefully curated stack of industry-leading technologies, frameworks, and platforms.</p>
+      <div class="gradient-separator"></div>
+    </div>
+
+    <div class="tech-grid">
+      <div class="tech-item reveal" data-tooltip="Flutter — Cross-platform framework" style="--tech-color:#54C5F8">
+        <div class="tech-logo">💙</div>
+        <div class="tech-name">Flutter</div>
+      </div>
+      <div class="tech-item reveal delay-100" data-tooltip="Android Development" style="--tech-color:#3DDC84">
+        <div class="tech-logo">🤖</div>
+        <div class="tech-name">Android</div>
+      </div>
+      <div class="tech-item reveal delay-200" data-tooltip="iOS Development (Swift)" style="--tech-color:#FA7343">
+        <div class="tech-logo">🍎</div>
+        <div class="tech-name">iOS / Swift</div>
+      </div>
+      <div class="tech-item reveal delay-300" data-tooltip="Java — Enterprise backend" style="--tech-color:#ED8B00">
+        <div class="tech-logo">☕</div>
+        <div class="tech-name">Java</div>
+      </div>
+      <div class="tech-item reveal delay-400" data-tooltip="Kotlin — Modern Android" style="--tech-color:#7F52FF">
+        <div class="tech-logo">🎯</div>
+        <div class="tech-name">Kotlin</div>
+      </div>
+      <div class="tech-item reveal" data-tooltip="Dart — Flutter's language" style="--tech-color:#00B4AB">
+        <div class="tech-logo">🎪</div>
+        <div class="tech-name">Dart</div>
+      </div>
+      <div class="tech-item reveal delay-100" data-tooltip="C++ — High performance" style="--tech-color:#659AD2">
+        <div class="tech-logo">⚡</div>
+        <div class="tech-name">C++</div>
+      </div>
+      <div class="tech-item reveal delay-200" data-tooltip="Firebase — BaaS platform" style="--tech-color:#FFCA28">
+        <div class="tech-logo">🔥</div>
+        <div class="tech-name">Firebase</div>
+      </div>
+      <div class="tech-item reveal delay-300" data-tooltip="Node.js — Server-side JS" style="--tech-color:#339933">
+        <div class="tech-logo">🟢</div>
+        <div class="tech-name">Node.js</div>
+      </div>
+      <div class="tech-item reveal delay-400" data-tooltip="REST API Design" style="--tech-color:#FF6B6B">
+        <div class="tech-logo">🔌</div>
+        <div class="tech-name">REST API</div>
+      </div>
+      <div class="tech-item reveal" data-tooltip="AWS / GCP / Azure Cloud" style="--tech-color:#FF9900">
+        <div class="tech-logo">☁️</div>
+        <div class="tech-name">Cloud (AWS/GCP)</div>
+      </div>
+      <div class="tech-item reveal delay-100" data-tooltip="AI & Machine Learning" style="--tech-color:#9C27B0">
+        <div class="tech-logo">🤖</div>
+        <div class="tech-name">AI / ML</div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:40px;">
+      <a href="pages/technologies.html" class="btn btn-outline">View Full Tech Stack →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── PORTFOLIO PREVIEW ────────────────────────────────────── -->
+<section class="section" id="portfolio" style="background:var(--bg-secondary);" aria-labelledby="portfolio-title">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Our Work</div>
+      <h2 class="section-title" id="portfolio-title">Featured Projects</h2>
+      <p class="section-subtitle">A glimpse into the world-class digital products we've built for startups, enterprises, and global brands.</p>
+      <div class="gradient-separator"></div>
+    </div>
+
+    <div class="portfolio-filters" role="tablist" aria-label="Portfolio category filters">
+      <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" id="filter-all">All</button>
+      <button class="filter-btn" data-filter="mobile" role="tab" id="filter-mobile">📱 Mobile</button>
+      <button class="filter-btn" data-filter="web" role="tab" id="filter-web">🌐 Web</button>
+      <button class="filter-btn" data-filter="enterprise" role="tab" id="filter-enterprise">🏢 Enterprise</button>
+      <button class="filter-btn" data-filter="ecommerce" role="tab" id="filter-ecommerce">🛒 E-Commerce</button>
+      <button class="filter-btn" data-filter="ai" role="tab" id="filter-ai">🤖 AI</button>
+    </div>
+
+    <div class="portfolio-grid">
+      <!-- Project 1 -->
+      <article class="portfolio-card reveal" data-category="mobile">
+        <div class="portfolio-thumb">
+          <div class="portfolio-thumb-bg" style="background:linear-gradient(135deg,#0057FF22,#7C3AED22);">📱</div>
+          <div class="portfolio-overlay">
+            <a href="pages/portfolio.html" class="btn btn-ghost btn-sm" style="color:#fff;border-color:#fff;">View Case</a>
+          </div>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-category">Mobile App</div>
+          <h3 class="portfolio-title">HealthTrack Pro</h3>
+          <p class="portfolio-desc">AI-powered fitness tracking app with real-time workout analysis, nutrition planning, and personalized health insights. 100K+ downloads.</p>
+          <div class="portfolio-tags">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">AI/ML</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="portfolio-card reveal delay-100" data-category="ecommerce">
+        <div class="portfolio-thumb">
+          <div class="portfolio-thumb-bg" style="background:linear-gradient(135deg,#10B98122,#06B6D422);">🛒</div>
+          <div class="portfolio-overlay">
+            <a href="pages/portfolio.html" class="btn btn-ghost btn-sm" style="color:#fff;border-color:#fff;">View Case</a>
+          </div>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-category">E-Commerce Platform</div>
+          <h3 class="portfolio-title">LuxeCart — Premium Shopping</h3>
+          <p class="portfolio-desc">Full-stack e-commerce platform with AR try-on features, AI recommendations, multi-currency, and 5-second checkout. $2M+ GMV in year one.</p>
+          <div class="portfolio-tags">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">REST API</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="portfolio-card reveal delay-200" data-category="enterprise">
+        <div class="portfolio-thumb">
+          <div class="portfolio-thumb-bg" style="background:linear-gradient(135deg,#F59E0B22,#EF444422);">🏢</div>
+          <div class="portfolio-overlay">
+            <a href="pages/portfolio.html" class="btn btn-ghost btn-sm" style="color:#fff;border-color:#fff;">View Case</a>
+          </div>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-category">Enterprise Software</div>
+          <h3 class="portfolio-title">FleetMaster ERP</h3>
+          <p class="portfolio-desc">Enterprise fleet management system managing 10,000+ vehicles with real-time GPS, predictive maintenance, and automated reporting.</p>
+          <div class="portfolio-tags">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Cloud</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="portfolio-card reveal delay-300" data-category="ai">
+        <div class="portfolio-thumb">
+          <div class="portfolio-thumb-bg" style="background:linear-gradient(135deg,#9C27B022,#7C3AED22);">🤖</div>
+          <div class="portfolio-overlay">
+            <a href="pages/portfolio.html" class="btn btn-ghost btn-sm" style="color:#fff;border-color:#fff;">View Case</a>
+          </div>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-category">AI Solution</div>
+          <h3 class="portfolio-title">SupportAI — Intelligent CX</h3>
+          <p class="portfolio-desc">GPT-powered customer support platform reducing support tickets by 70% with intelligent auto-resolution and sentiment analysis.</p>
+          <div class="portfolio-tags">
+            <span class="tech-tag">AI/ML</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Firebase</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="portfolio-card reveal" data-category="mobile">
+        <div class="portfolio-thumb">
+          <div class="portfolio-thumb-bg" style="background:linear-gradient(135deg,#06B6D422,#0057FF22);">📦</div>
+          <div class="portfolio-overlay">
+            <a href="pages/portfolio.html" class="btn btn-ghost btn-sm" style="color:#fff;border-color:#fff;">View Case</a>
+          </div>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-category">Mobile App</div>
+          <h3 class="portfolio-title">DeliverNow — Logistics App</h3>
+          <p class="portfolio-desc">Real-time delivery tracking app for 3PL logistics company. 500+ delivery partners, live GPS, proof of delivery, and customer notifications.</p>
+          <div class="portfolio-tags">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Kotlin</span>
+            <span class="tech-tag">Firebase</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 6 -->
+      <article class="portfolio-card reveal delay-100" data-category="web">
+        <div class="portfolio-thumb">
+          <div class="portfolio-thumb-bg" style="background:linear-gradient(135deg,#10B98122,#FFCA2822);">🌐</div>
+          <div class="portfolio-overlay">
+            <a href="pages/portfolio.html" class="btn btn-ghost btn-sm" style="color:#fff;border-color:#fff;">View Case</a>
+          </div>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-category">Web Application</div>
+          <h3 class="portfolio-title">EduLearn — Online Academy</h3>
+          <p class="portfolio-desc">Full-featured e-learning platform with live classes, course marketplace, progress tracking, and certificate generation. 25K+ students enrolled.</p>
+          <div class="portfolio-tags">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">Cloud</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div style="text-align:center;margin-top:48px;">
+      <a href="pages/portfolio.html" class="btn btn-primary btn-lg">View All Projects →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ────────────────────────────────────────── -->
+<section class="section" id="testimonials" aria-labelledby="testimonials-title">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Client Reviews</div>
+      <h2 class="section-title" id="testimonials-title">What Our Clients Say</h2>
+      <p class="section-subtitle">Don't just take our word for it — hear from the businesses we've transformed.</p>
+      <div class="gradient-separator"></div>
+    </div>
+
+    <div class="testimonials-wrapper">
+      <div id="testimonials-track" class="testimonials-track">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">RiskFreeFeel delivered our healthcare app in just 10 weeks, and it exceeded every expectation. The attention to detail, code quality, and ongoing support have been outstanding. Truly world-class!</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AK</div>
+            <div>
+              <div class="testimonial-name">Arjun Krishnan</div>
+              <div class="testimonial-role">CTO, HealthBridge India</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">The e-commerce platform they built for us generated $2M in the first year. The AI recommendation engine alone increased our average order value by 35%. Best investment we've ever made.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:linear-gradient(135deg,#10B981,#06B6D4)">SM</div>
+            <div>
+              <div class="testimonial-name">Sarah Mitchell</div>
+              <div class="testimonial-role">CEO, LuxeCart International</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">As a startup, we were nervous about enterprise-level development costs. RiskFreeFeel gave us a world-class Flutter app at a fraction of what others quoted. Transparent, professional, and brilliant!</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:linear-gradient(135deg,#F59E0B,#EF4444)">RP</div>
+            <div>
+              <div class="testimonial-name">Ravi Patel</div>
+              <div class="testimonial-role">Founder, TechNova Startup</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">The AI customer support system they built cut our support costs by 60% and improved customer satisfaction scores by 40%. The ROI was visible within 3 months of deployment.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:linear-gradient(135deg,#7C3AED,#9D6FFF)">JL</div>
+            <div>
+              <div class="testimonial-name">Jennifer Liu</div>
+              <div class="testimonial-role">VP Operations, GlobalRetail Corp</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 5 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">Their Flutter expertise is unmatched. Our app has a 4.9-star rating with 100K+ downloads. They took complete ownership — from concept to App Store approval — flawlessly executed.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:linear-gradient(135deg,#06B6D4,#3DDC84)">MK</div>
+            <div>
+              <div class="testimonial-name">Mohammed Khalid</div>
+              <div class="testimonial-role">Product Manager, FitLife Dubai</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="testimonials-controls">
+      <button class="testimonials-nav-btn" id="testimonials-prev" aria-label="Previous testimonial">‹</button>
+      <div class="testimonials-dot active"></div>
+      <div class="testimonials-dot"></div>
+      <div class="testimonials-dot"></div>
+      <div class="testimonials-dot"></div>
+      <div class="testimonials-dot"></div>
+      <button class="testimonials-nav-btn" id="testimonials-next" aria-label="Next testimonial">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ── DEVELOPMENT PROCESS ─────────────────────────────────── -->
+<section class="section" id="process" style="background:var(--bg-secondary);" aria-labelledby="process-title">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Our Process</div>
+      <h2 class="section-title" id="process-title">How We Build<br />World-Class Software</h2>
+      <p class="section-subtitle">A transparent, proven 6-step process that guarantees on-time delivery and exceptional quality.</p>
+      <div class="gradient-separator"></div>
+    </div>
+
+    <div class="process-timeline">
+      <div class="process-step reveal">
+        <div class="process-num">01</div>
+        <h3 class="process-title">Discovery & Planning</h3>
+        <p class="process-desc">Deep-dive requirements analysis, technical architecture design, project roadmap, and risk assessment. We plan for success.</p>
+      </div>
+      <div class="process-step reveal delay-100">
+        <div class="process-num">02</div>
+        <h3 class="process-title">UI/UX Design</h3>
+        <p class="process-desc">Wireframes, interactive prototypes, and pixel-perfect design systems. You see and approve before we write a single line of code.</p>
+      </div>
+      <div class="process-step reveal delay-200">
+        <div class="process-num">03</div>
+        <h3 class="process-title">Agile Development</h3>
+        <p class="process-desc">2-week sprints with daily updates, bi-weekly demos, and full code transparency via GitHub. Clean, tested, documented code.</p>
+      </div>
+      <div class="process-step reveal delay-300">
+        <div class="process-num">04</div>
+        <h3 class="process-title">QA & Testing</h3>
+        <p class="process-desc">Automated testing, manual QA, performance benchmarking, security audits, and cross-device compatibility — before you see it.</p>
+      </div>
+      <div class="process-step reveal delay-400">
+        <div class="process-num">05</div>
+        <h3 class="process-title">Launch & Deploy</h3>
+        <p class="process-desc">Smooth deployment to App Stores or cloud with zero downtime. CI/CD pipelines, monitoring setup, and launch celebration! 🎉</p>
+      </div>
+      <div class="process-step reveal delay-500">
+        <div class="process-num">06</div>
+        <h3 class="process-title">Support & Growth</h3>
+        <p class="process-desc">6-month free maintenance, 24/7 monitoring, performance analytics, and continuous feature development to grow your product.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA SECTION ─────────────────────────────────────────── -->
+<section class="cta-section" id="cta" aria-labelledby="cta-title">
+  <div class="cta-bg" aria-hidden="true"></div>
+  <div class="cta-pattern" aria-hidden="true"></div>
+  <div class="cta-inner">
+    <div class="section-label" style="margin:0 auto 20px;">🚀 Ready to Start?</div>
+    <h2 class="cta-title" id="cta-title">Transform Your Vision Into<br />Reality — Risk Free</h2>
+    <p class="cta-subtitle">Join 50+ companies who chose RiskFreeFeel Technologies to build their digital future. Free consultation, transparent pricing, guaranteed delivery.</p>
+    <div class="cta-buttons">
+      <a href="pages/contact.html" class="btn btn-primary btn-lg" id="cta-contact">📩 Get Free Consultation</a>
+      <a href="tel:+15551234567" class="btn btn-outline btn-lg" id="cta-call">📞 Call Us Now</a>
+    </div>
+    <p style="margin-top:24px;font-size:0.85rem;color:var(--text-muted);">
+      ✓ Free 30-min consultation &nbsp;·&nbsp; ✓ No obligation quote &nbsp;·&nbsp; ✓ Response within 24 hours
+    </p>
+  </div>
+</section>
+
+<!-- ── FOOTER ──────────────────────────────────────────────── -->
+<footer class="footer" id="footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <!-- Brand Column -->
+      <div class="footer-brand">
+        <a href="index.html" class="navbar-logo" style="margin-bottom:0;">
+          <div class="navbar-logo-icon">RF</div>
+          <div class="navbar-logo-text">
+            <span class="navbar-logo-name">RiskFreeFeel</span>
+            <span class="navbar-logo-tagline">Technologies</span>
+          </div>
+        </a>
+        <p class="footer-brand-desc">Solution without risk, success without stress. We build world-class software that empowers businesses to grow, innovate, and lead in the digital era.</p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-btn" aria-label="LinkedIn" data-tooltip="LinkedIn">in</a>
+          <a href="#" class="footer-social-btn" aria-label="Twitter/X" data-tooltip="Twitter">𝕏</a>
+          <a href="#" class="footer-social-btn" aria-label="Facebook" data-tooltip="Facebook">f</a>
+          <a href="#" class="footer-social-btn" aria-label="Instagram" data-tooltip="Instagram">📷</a>
+          <a href="#" class="footer-social-btn" aria-label="GitHub" data-tooltip="GitHub">⌥</a>
+        </div>
+
+        <!-- Newsletter -->
+        <div style="margin-top:24px;">
+          <div class="footer-col-title" style="margin-bottom:10px;">Newsletter</div>
+          <p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:10px;">Get tech insights & company updates.</p>
+          <form class="footer-newsletter-form newsletter-form">
+            <input type="email" class="footer-newsletter-input" placeholder="Enter your email" required aria-label="Email for newsletter" />
+            <button type="submit" class="btn btn-primary btn-sm" style="border-radius:var(--radius-md);">→</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Services Column -->
+      <div>
+        <h3 class="footer-col-title">Services</h3>
+        <ul class="footer-links">
+          <li><a href="pages/services.html#mobile" class="footer-link">Mobile App Development</a></li>
+          <li><a href="pages/services.html#enterprise" class="footer-link">Enterprise Software</a></li>
+          <li><a href="pages/services.html#web" class="footer-link">Web Development</a></li>
+          <li><a href="pages/services.html#ecommerce" class="footer-link">E-Commerce</a></li>
+          <li><a href="pages/services.html#ai" class="footer-link">AI Solutions</a></li>
+          <li><a href="pages/services.html#uiux" class="footer-link">UI/UX Design</a></li>
+          <li><a href="pages/services.html#cloud" class="footer-link">Cloud Integration</a></li>
+          <li><a href="pages/services.html#training" class="footer-link">Technical Training</a></li>
+        </ul>
+      </div>
+
+      <!-- Company Column -->
+      <div>
+        <h3 class="footer-col-title">Company</h3>
+        <ul class="footer-links">
+          <li><a href="pages/about.html" class="footer-link">About Us</a></li>
+          <li><a href="pages/portfolio.html" class="footer-link">Portfolio</a></li>
+          <li><a href="pages/technologies.html" class="footer-link">Technologies</a></li>
+          <li><a href="pages/pricing.html" class="footer-link">Pricing</a></li>
+          <li><a href="pages/blog.html" class="footer-link">Blog</a></li>
+          <li><a href="pages/careers.html" class="footer-link">Careers</a></li>
+          <li><a href="pages/contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Column -->
+      <div>
+        <h3 class="footer-col-title">Contact Us</h3>
+        <a href="tel:+15551234567" class="footer-contact-item">
+          <div class="footer-contact-icon">📞</div>
+          <span>+1 (555) 123-4567</span>
+        </a>
+        <a href="mailto:info@riskfreefeel.com" class="footer-contact-item">
+          <div class="footer-contact-icon">📧</div>
+          <span>info@riskfreefeel.com</span>
+        </a>
+        <a href="https://wa.me/15551234567" class="footer-contact-item" target="_blank" rel="noopener">
+          <div class="footer-contact-icon">💬</div>
+          <span>WhatsApp Us</span>
+        </a>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">📍</div>
+          <span>India | Remote Worldwide</span>
+        </div>
+        <div style="margin-top:20px;">
+          <a href="pages/contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Get a Free Quote</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2024 RiskFreeFeel Technologies. All rights reserved. Built with ❤️ for innovation.</p>
+      <div class="footer-legal">
+        <a href="#" class="footer-legal-link">Privacy Policy</a>
+        <a href="#" class="footer-legal-link">Terms of Service</a>
+        <a href="#" class="footer-legal-link">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ── FLOATING BUTTONS ────────────────────────────────────── -->
+<!-- WhatsApp -->
+<div class="whatsapp-fab">
+  <a href="https://wa.me/15551234567?text=Hi! I'm interested in your services." 
+     class="whatsapp-btn" target="_blank" rel="noopener" 
+     aria-label="Chat on WhatsApp" id="whatsapp-fab">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+  <div class="whatsapp-tooltip">Chat on WhatsApp</div>
+</div>
+
+<!-- AI Chatbot -->
+<div class="chatbot-fab" id="chatbot-fab">
+  <!-- Chat Window -->
+  <div class="chatbot-window" id="chatbot-window" role="dialog" aria-label="AI Chat Assistant" aria-modal="true">
+    <div class="chatbot-header">
+      <div class="chatbot-avatar" aria-hidden="true">🤖</div>
+      <div>
+        <div class="chatbot-title">RiskBot AI Assistant</div>
+        <div class="chatbot-status"><span class="chatbot-status-dot"></span> Online — replies instantly</div>
+      </div>
+      <button class="chatbot-close-btn" id="chatbot-close" aria-label="Close chat">✕</button>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages" role="log" aria-live="polite" aria-label="Chat messages"></div>
+    <div class="chatbot-quick-replies" aria-label="Quick reply options">
+      <button class="quick-reply-btn">Our Services</button>
+      <button class="quick-reply-btn">Pricing</button>
+      <button class="quick-reply-btn">Mobile App</button>
+      <button class="quick-reply-btn">Contact</button>
+      <button class="quick-reply-btn">Timeline</button>
+    </div>
+    <div class="chatbot-input-row">
+      <input type="text" class="chatbot-input" id="chatbot-input" placeholder="Ask me anything..." aria-label="Chat message input" />
+      <button class="chatbot-send-btn" id="chatbot-send" aria-label="Send message">→</button>
+    </div>
+  </div>
+
+  <!-- FAB Button -->
+  <div style="position:relative;">
+    <button class="chatbot-btn" id="chatbot-btn" aria-label="Open AI chat assistant" aria-expanded="false">🤖</button>
+    <div class="chatbot-badge">1</div>
+  </div>
+</div>
+
+<!-- Back to Top -->
+<button id="back-to-top" aria-label="Back to top" style="
+  position:fixed;bottom:96px;right:32px;z-index:var(--z-chatbot);
+  width:44px;height:44px;border-radius:50%;
+  background:var(--gradient-primary);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.1rem;border:none;cursor:pointer;
+  box-shadow:0 4px 15px rgba(0,87,255,0.35);
+  opacity:0;pointer-events:none;
+  transition:opacity 0.3s ease, transform 0.2s ease;
+">↑</button>
+
+<!-- Scripts -->
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
