@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /assets/
 
-Sitemap: https://riskfreefeel.com/sitemap.xml
+Sitemap: https://riskfreefeel.co.in/sitemap.xml
