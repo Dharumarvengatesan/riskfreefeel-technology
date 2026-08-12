@@ -195,43 +195,35 @@ const Typewriter = (() => {
     let phraseIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
-    let isWaiting = false;
 
     function type() {
       const current = phrases[phraseIndex];
-
-      if (isWaiting) {
-        isWaiting = false;
-        isDeleting = true;
-        setTimeout(type, 1200);
-        return;
-      }
-
-      if (isDeleting) {
-        el.textContent = current.slice(0, charIndex - 1);
-        charIndex--;
-        if (charIndex === 0) {
-          isDeleting = false;
-          phraseIndex = (phraseIndex + 1) % phrases.length;
-          setTimeout(type, 400);
-          return;
-        }
-        setTimeout(type, 50);
-      } else {
+      if (!isDeleting) {
         el.textContent = current.slice(0, charIndex + 1);
         charIndex++;
-        if (charIndex === current.length) {
-          isWaiting = true;
-          setTimeout(type, 100);
-          return;
+        if (charIndex < current.length) {
+          setTimeout(type, 80);
+        } else {
+          setTimeout(() => {
+            isDeleting = true;
+            setTimeout(type, 80);
+          }, 1500);
         }
-        setTimeout(type, 85);
+      } else {
+        el.textContent = current.slice(0, charIndex - 1);
+        charIndex--;
+        if (charIndex > 0) {
+          setTimeout(type, 50);
+        } else {
+          isDeleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+          setTimeout(type, 200);
+        }
       }
     }
 
     type();
   }
-
   return { init };
 })();
 

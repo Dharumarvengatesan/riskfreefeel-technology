@@ -1,4 +1,4 @@
-﻿/* ============================================================
+/* ============================================================
    RiskFreeFeel Technologies — Component Styles
    (Hero, Cards, Services, Portfolio, Stats, CTA, etc.)
    ============================================================ */
@@ -100,6 +100,7 @@
 }
 
 .hero-typewriter {
+  display: inline-block;
   background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -109,6 +110,20 @@
   border-right: 3px solid var(--brand-blue);
   padding-right: 4px;
   animation: gradient-shift 4s infinite, blink 1s step-end infinite;
+}
+.slide-in-left {
+  animation: slide-in-left 0.6s forwards, gradient-shift 4s infinite, blink 1s step-end infinite;
+}
+.slide-in-right {
+  animation: slide-in-right 0.6s forwards, gradient-shift 4s infinite, blink 1s step-end infinite;
+}
+@keyframes slide-in-left {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes slide-in-right {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
 }
 
 .hero-subtitle {
