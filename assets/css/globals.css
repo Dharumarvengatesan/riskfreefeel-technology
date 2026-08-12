@@ -393,12 +393,12 @@ input, textarea, select { font-family: var(--font-body); }
 }
 
 /* ── Reveal Animations (Intersection Observer) ────────────── */
+/* Uses only opacity + transform — no layout recalculation.     */
 .reveal {
   opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translateY(20px);
+  transition: opacity 600ms ease-out, transform 600ms ease-out;
 }
-
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
@@ -406,27 +406,28 @@ input, textarea, select { font-family: var(--font-body); }
 
 .reveal-left {
   opacity: 0;
-  transform: translateX(-40px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translateX(-24px);
+  transition: opacity 600ms ease-out, transform 600ms ease-out;
 }
 .reveal-left.visible { opacity: 1; transform: translateX(0); }
 
 .reveal-right {
   opacity: 0;
-  transform: translateX(40px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translateX(24px);
+  transition: opacity 600ms ease-out, transform 600ms ease-out;
 }
 .reveal-right.visible { opacity: 1; transform: translateX(0); }
 
 .reveal-scale {
   opacity: 0;
-  transform: scale(0.9);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: scale(0.96);
+  transition: opacity 600ms ease-out, transform 600ms ease-out;
 }
 .reveal-scale.visible { opacity: 1; transform: scale(1); }
 
 /* Stagger delays */
 .delay-100 { transition-delay: 0.1s; }
+.delay-150 { transition-delay: 0.15s; }
 .delay-200 { transition-delay: 0.2s; }
 .delay-300 { transition-delay: 0.3s; }
 .delay-400 { transition-delay: 0.4s; }
@@ -569,8 +570,9 @@ select.input-field option {
 }
 
 /* ── Founder / Startup Section ─────────────────────────────── */
-.reveal-left  { opacity: 0; transform: translateX(-40px); transition: opacity 0.7s ease, transform 0.7s ease; }
-.reveal-right { opacity: 0; transform: translateX(40px);  transition: opacity 0.7s ease, transform 0.7s ease; }
+/* Defined above in reveal block — kept for backward compat.    */
+.reveal-left  { opacity: 0; transform: translateX(-24px); transition: opacity 600ms ease-out, transform 600ms ease-out; }
+.reveal-right { opacity: 0; transform: translateX(24px);  transition: opacity 600ms ease-out, transform 600ms ease-out; }
 .reveal-left.visible, .reveal-right.visible { opacity: 1; transform: translateX(0); }
 
 /* ── Scroll Indicator Animations ───────────────────────────── */
@@ -592,4 +594,98 @@ select.input-field option {
 #scroll-indicator.hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+/* ── Card hover — constrained lift, no dimensions change ────── */
+.card:hover {
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-4px);
+  transition: transform 200ms ease-out, box-shadow 200ms ease-out, border-color 200ms ease-out;
+}
+
+/* ── Button micro-interactions ──────────────────────────────── */
+.btn {
+  transition: transform 160ms ease-out, box-shadow 160ms ease-out, background 200ms ease-out, opacity 160ms ease-out;
+}
+.btn:hover  { transform: translateY(-2px); }
+.btn:active { transform: translateY(0) scale(0.98); }
+
+/* Primary button — constrained glow on hover */
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(249, 115, 22, 0.45);
+}
+.btn-primary:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 16px rgba(249, 115, 22, 0.3);
+}
+
+/* Outline button */
+.btn-outline:hover {
+  transform: translateY(-2px);
+  border-color: var(--brand-blue);
+  color: var(--brand-blue-light);
+  background: rgba(0, 87, 255, 0.05);
+}
+
+/* ── Service / why card icon subtle scale on hover ──────────── */
+.service-card:hover .service-icon,
+.why-card:hover .why-icon {
+  transform: scale(1.05);
+  transition: transform 200ms ease-out;
+}
+
+/* ── Tech tag hover ─────────────────────────────────────────── */
+.tech-tag:hover {
+  transform: translateY(-2px);
+  transition: transform 180ms ease-out, border-color 180ms ease-out, color 180ms ease-out;
+}
+
+/* ── Prefers Reduced Motion — full override ──────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  /* Kill all transitions */
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    transition-delay: 0ms !important;
+  }
+
+  /* Make reveal elements immediately visible */
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Disable floating orbs */
+  .hero-orb-1, .hero-orb-2 { animation: none; }
+
+  /* Disable section label pulse dot */
+  .section-label::before { animation: none; }
+
+  /* Disable scroll indicator bouncing */
+  #scroll-indicator svg { animation: none; }
+}
+
+/* ── Mobile animation tweaks ────────────────────────────────── */
+@media (max-width: 768px) {
+  /* Shorter reveal distances on small screens */
+  .reveal         { transform: translateY(12px); }
+  .reveal-left    { transform: translateX(-14px); }
+  .reveal-right   { transform: translateX(14px); }
+
+  /* Faster stagger on mobile — feels snappier */
+  .delay-300 { transition-delay: 0.15s; }
+  .delay-400 { transition-delay: 0.2s; }
+  .delay-500 { transition-delay: 0.25s; }
+  .delay-600 { transition-delay: 0.3s; }
+
+  /* Disable card tilt on touch devices */
+  .card:hover {
+    transform: none;
+  }
 }
