@@ -1,4 +1,4 @@
-﻿/* ============================================================
+/* ============================================================
    RiskFreeFeel Technologies — Navbar Styles
    ============================================================ */
 
@@ -294,7 +294,18 @@
   .hamburger { display: flex; }
 }
 
+@media (max-width: 768px) {
+  .navbar-logo img {
+    height: 40px !important;
+    width: auto !important;
+  }
+}
+
 @media (max-width: 480px) {
+  .navbar-logo img {
+    height: 32px !important;
+    width: auto !important;
+  }
   .navbar-logo-tagline { display: none; }
   .navbar-inner { height: 64px; }
   .mobile-menu { top: 64px; }
