@@ -481,20 +481,35 @@ select.input-field {
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
+  background-color: var(--bg-tertiary, #111827);
+  color: var(--text-primary, #ffffff);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%233b82f6' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 16px center;
   background-size: 16px;
   padding-right: 42px;
 }
+
+[data-theme="dark"] select.input-field,
+select.input-field {
+  background-color: #111827 !important;
+  color: #f9fafb !important;
+}
+
+[data-theme="light"] select.input-field {
+  background-color: #ffffff !important;
+  color: #111827 !important;
+}
+
 select.input-field option {
-  background-color: #0f172a;
-  color: #f8fafc;
+  background-color: #111827 !important;
+  color: #f9fafb !important;
   padding: 12px;
 }
+
 [data-theme="light"] select.input-field option {
-  background-color: #ffffff;
-  color: #0f172a;
+  background-color: #ffffff !important;
+  color: #111827 !important;
 }
 
 /* ── Tooltip ──────────────────────────────────────────────── */
