@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    RiskFreeFeel Technologies — Component Styles
    (Hero, Cards, Services, Portfolio, Stats, CTA, etc.)
    ============================================================ */
@@ -30,7 +30,7 @@
   position: absolute;
   top: -10%; left: 15%;
   width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(0, 87, 255, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.15) 0%, transparent 70%);
   border-radius: 50%;
   z-index: 0;
   animation: float 8s ease-in-out infinite;
@@ -65,8 +65,8 @@
   align-items: center;
   gap: 8px;
   padding: 8px 18px;
-  background: rgba(0, 87, 255, 0.1);
-  border: 1px solid rgba(0, 87, 255, 0.25);
+  background: rgba(249, 115, 22, 0.1);
+  border: 1px solid rgba(249, 115, 22, 0.25);
   border-radius: var(--radius-full);
   font-size: 0.8125rem;
   font-weight: 600;
@@ -420,7 +420,7 @@
   background: var(--gradient-primary);
   color: #fff;
   border-color: transparent;
-  box-shadow: 0 4px 15px rgba(0, 87, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(249, 115, 22, 0.3);
 }
 
 .portfolio-grid {
@@ -650,12 +650,12 @@
   font-weight: 700;
   color: #fff;
   margin: 0 auto 20px;
-  box-shadow: 0 4px 20px rgba(0, 87, 255, 0.35);
+  box-shadow: 0 4px 20px rgba(249, 115, 22, 0.35);
   transition: all var(--transition-base);
 }
 .process-step:hover .process-num {
   transform: scale(1.1);
-  box-shadow: 0 8px 30px rgba(0, 87, 255, 0.5);
+  box-shadow: 0 8px 30px rgba(249, 115, 22, 0.5);
 }
 
 .process-title {
@@ -887,7 +887,7 @@
 .footer-contact-icon {
   width: 32px; height: 32px;
   border-radius: var(--radius-sm);
-  background: rgba(0, 87, 255, 0.1);
+  background: rgba(249, 115, 22, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1131,8 +1131,8 @@
 }
 .quick-reply-btn {
   padding: 6px 12px;
-  background: rgba(0, 87, 255, 0.1);
-  border: 1px solid rgba(0, 87, 255, 0.2);
+  background: rgba(249, 115, 22, 0.1);
+  border: 1px solid rgba(249, 115, 22, 0.2);
   border-radius: var(--radius-full);
   font-size: 0.75rem;
   color: var(--brand-blue-light);
@@ -1141,7 +1141,7 @@
   font-family: var(--font-body);
 }
 .quick-reply-btn:hover {
-  background: rgba(0, 87, 255, 0.2);
+  background: rgba(249, 115, 22, 0.2);
   border-color: var(--brand-blue);
 }
 

@@ -27,7 +27,7 @@
   <meta name="twitter:description" content="Solution without risk, success without stress." />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230057FF'/><text y='.9em' font-size='60' x='50%' text-anchor='middle' fill='white' font-weight='bold' dy='.1em'>R</text></svg>" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%230057FF'/><stop offset='100%25' stop-color='%237C3AED'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23g)'/><text y='.9em' font-size='52' x='50%25' text-anchor='middle' fill='white' font-weight='900' dy='.1em' font-family='Arial,sans-serif'>RF</text></svg>" />
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/globals.css" />
@@ -65,12 +65,8 @@
 <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
   <div class="navbar-inner">
     <!-- Logo -->
-    <a href="index.html" class="navbar-logo" aria-label="RiskFreeFeel Technologies Home">
-      <div class="navbar-logo-icon" aria-hidden="true">RF</div>
-      <div class="navbar-logo-text">
-        <span class="navbar-logo-name">RiskFreeFeel</span>
-        <span class="navbar-logo-tagline">Technologies</span>
-      </div>
+    <a href="index.html" class="navbar-logo" aria-label="RiskFreeFeel Technologies Home" style="padding:4px 0;">
+      <img src="assets/images/logo-dark.svg" alt="RiskFreeFeel Technologies" height="52" style="height:52px;width:auto;display:block;" />
     </a>
 
     <!-- Desktop Nav Links -->
@@ -88,10 +84,8 @@
           <a href="pages/services.html#cloud" class="navbar-dropdown-item">☁️ Cloud</a>
         </div>
       </li>
-      <li><a href="pages/portfolio.html" class="navbar-link">Portfolio</a></li>
       <li><a href="pages/technologies.html" class="navbar-link">Technologies</a></li>
       <li><a href="pages/pricing.html" class="navbar-link">Pricing</a></li>
-      <li><a href="pages/blog.html" class="navbar-link">Blog</a></li>
       <li><a href="pages/careers.html" class="navbar-link">Careers</a></li>
     </ul>
 
@@ -117,10 +111,8 @@
       <li><a href="index.html" class="mobile-menu-link active">🏠 Home</a></li>
       <li><a href="pages/about.html" class="mobile-menu-link">👥 About Us</a></li>
       <li><a href="pages/services.html" class="mobile-menu-link">⚡ Services</a></li>
-      <li><a href="pages/portfolio.html" class="mobile-menu-link">💼 Portfolio</a></li>
       <li><a href="pages/technologies.html" class="mobile-menu-link">🔧 Technologies</a></li>
       <li><a href="pages/pricing.html" class="mobile-menu-link">💰 Pricing</a></li>
-      <li><a href="pages/blog.html" class="mobile-menu-link">📝 Blog</a></li>
       <li><a href="pages/careers.html" class="mobile-menu-link">🚀 Careers</a></li>
       <li><a href="pages/contact.html" class="mobile-menu-link">📩 Contact</a></li>
     </ul>
@@ -138,16 +130,16 @@
 <!-- ── HERO SECTION ────────────────────────────────────────── -->
 <section class="hero-section" id="home" aria-labelledby="hero-title">
   <canvas id="hero-canvas"></canvas>
-  <div class="hero-bg-gradient" aria-hidden="true"></div>
-  <div class="hero-orb-1" aria-hidden="true"></div>
-  <div class="hero-orb-2" aria-hidden="true"></div>
+  <div class="hero-bg-gradient parallax" data-speed="0.2" aria-hidden="true"></div>
+  <div class="hero-orb-1 parallax" data-speed="0.1" aria-hidden="true"></div>
+  <div class="hero-orb-2 parallax" data-speed="0.05" aria-hidden="true"></div>
 
   <div class="hero-inner container" style="max-width:1280px;margin:0 auto;width:100%;">
     <!-- Content -->
     <div class="hero-content">
       <div class="hero-badge">
         <span class="hero-badge-dot"></span>
-        🏆 #1 AI-Powered Software Company
+        🇮🇳 Made in India &nbsp;·&nbsp; 🚀 Founded 2024 &nbsp;·&nbsp; ✅ Delivering World-Class Apps
       </div>
 
       <h1 class="hero-title" id="hero-title">
@@ -161,34 +153,34 @@
       </h1>
 
       <p class="hero-subtitle">
-        <strong>RiskFreeFeel Technologies</strong> — Where innovation meets reliability. We build premium mobile apps, enterprise software, and AI solutions that deliver results. <em>Solution without risk, success without stress.</em>
+        <strong>RiskFreeFeel Technologies</strong> — A premium software agency delivering world-class mobile apps, custom web systems, and AI-powered solutions. We turn ambitious concepts into reliable digital products with milestone-based billing and full source code ownership.
       </p>
 
       <div class="hero-cta">
         <a href="pages/contact.html" class="btn btn-primary btn-lg" id="hero-cta-primary">
           🚀 Start Your Project
         </a>
-        <a href="pages/portfolio.html" class="btn btn-outline btn-lg" id="hero-cta-portfolio">
-          View Our Work →
+        <a href="pages/services.html" class="btn btn-outline btn-lg" id="hero-cta-portfolio">
+          Explore Services →
         </a>
       </div>
 
       <div class="hero-stats">
         <div class="hero-stat">
-          <div class="hero-stat-value" data-counter data-target="200" data-suffix="+">200+</div>
+          <div class="hero-stat-value" data-counter data-target="15" data-suffix="+">15+</div>
           <div class="hero-stat-label">Projects Delivered</div>
         </div>
         <div class="hero-stat">
-          <div class="hero-stat-value" data-counter data-target="50" data-suffix="+">50+</div>
+          <div class="hero-stat-value" data-counter data-target="20" data-suffix="+">20+</div>
           <div class="hero-stat-label">Happy Clients</div>
         </div>
         <div class="hero-stat">
-          <div class="hero-stat-value" data-counter data-target="5" data-suffix="+">5+</div>
-          <div class="hero-stat-label">Years Experience</div>
+          <div class="hero-stat-value">100%</div>
+          <div class="hero-stat-label">On-Time Delivery</div>
         </div>
         <div class="hero-stat">
-          <div class="hero-stat-value" data-counter data-target="99" data-suffix="%">99%</div>
-          <div class="hero-stat-label">Client Satisfaction</div>
+          <div class="hero-stat-value">&#9733; 4.9</div>
+          <div class="hero-stat-label">Client Rating</div>
         </div>
       </div>
     </div>
@@ -197,15 +189,15 @@
     <div class="hero-visual" aria-hidden="true">
       <div class="hero-device-mockup">
         <div class="hero-service-card">
-          <div class="hero-service-icon" style="background:rgba(0,87,255,0.15);">📱</div>
+          <div class="hero-service-icon" style="background:rgba(249,115,22,0.15);">📱</div>
           <div class="hero-service-title">Mobile App Development</div>
         </div>
         <div class="hero-service-card">
-          <div class="hero-service-icon" style="background:rgba(124,58,237,0.15);">🤖</div>
+          <div class="hero-service-icon" style="background:rgba(139,92,246,0.15);">🤖</div>
           <div class="hero-service-title">AI-Powered Solutions</div>
         </div>
         <div class="hero-service-card">
-          <div class="hero-service-icon" style="background:rgba(6,182,212,0.15);">☁️</div>
+          <div class="hero-service-icon" style="background:rgba(14,165,233,0.15);">☁️</div>
           <div class="hero-service-title">Cloud Integration</div>
         </div>
         <div class="hero-service-card">
@@ -217,18 +209,35 @@
           <div class="hero-service-title">UI/UX Design</div>
         </div>
         <div class="hero-service-card">
-          <div class="hero-service-icon" style="background:rgba(239,68,68,0.15);">🌐</div>
+          <div class="hero-service-icon" style="background:rgba(244,63,94,0.15);">🌐</div>
           <div class="hero-service-title">Web Development</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Scroll indicator -->
-  <div style="position:absolute;bottom:32px;left:50%;transform:translateX(-50%);z-index:1;text-align:center;animation:float 2s ease-in-out infinite;" aria-hidden="true">
-    <div style="font-size:0.75rem;color:var(--text-muted);margin-bottom:8px;letter-spacing:0.1em;text-transform:uppercase;">Scroll to explore</div>
-    <div style="width:24px;height:40px;border:2px solid var(--border-glass);border-radius:12px;margin:0 auto;display:flex;align-items:flex-start;justify-content:center;padding:6px;">
-      <div style="width:4px;height:8px;background:var(--brand-blue);border-radius:2px;animation:float 1.5s ease-in-out infinite;"></div>
+  <!-- Scroll indicator — animated bounce -->
+  <div id="scroll-indicator" aria-hidden="true" style="
+    position:absolute;bottom:36px;left:50%;transform:translateX(-50%);
+    z-index:2;text-align:center;cursor:pointer;
+  " onclick="window.scrollBy({top: window.innerHeight * 0.85, behavior:'smooth'})">
+    <div style="
+      font-size:0.65rem;color:var(--text-muted);letter-spacing:0.18em;
+      text-transform:uppercase;margin-bottom:10px;
+      animation:scrollTextFade 2.5s ease-in-out infinite;
+    ">Scroll to explore</div>
+
+    <!-- Chevron stack — triple bounce -->
+    <div style="display:flex;flex-direction:column;align-items:center;gap:0;">
+      <svg width="22" height="14" viewBox="0 0 22 14" fill="none" style="animation:chevronBounce 1.4s ease-in-out infinite;opacity:1;">
+        <path d="M1 1L11 11L21 1" stroke="var(--brand-orange)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <svg width="22" height="14" viewBox="0 0 22 14" fill="none" style="animation:chevronBounce 1.4s ease-in-out 0.15s infinite;opacity:0.55;margin-top:-4px;">
+        <path d="M1 1L11 11L21 1" stroke="var(--brand-orange)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <svg width="22" height="14" viewBox="0 0 22 14" fill="none" style="animation:chevronBounce 1.4s ease-in-out 0.30s infinite;opacity:0.2;margin-top:-4px;">
+        <path d="M1 1L11 11L21 1" stroke="var(--brand-orange)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
     </div>
   </div>
 </section>
@@ -238,31 +247,246 @@
   <div class="container">
     <div class="stats-grid">
       <div class="stat-item reveal">
-        <div class="stat-number" data-counter data-target="200" data-suffix="+">200+</div>
-        <div class="stat-label">Projects Delivered</div>
-        <div class="stat-sub">Across 15+ countries</div>
+        <div class="stat-number" data-counter data-target="15" data-suffix="+">15+</div><div class="stat-label">Projects Delivered</div>
+        <div class="stat-sub">Across 6 industries</div>
       </div>
       <div class="stat-item reveal delay-100">
-        <div class="stat-number" data-counter data-target="50" data-suffix="+">50+</div>
-        <div class="stat-label">Happy Clients</div>
+        <div class="stat-number" data-counter data-target="20" data-suffix="+">20+</div><div class="stat-label">Happy Clients</div>
         <div class="stat-sub">Startups to enterprises</div>
       </div>
       <div class="stat-item reveal delay-200">
-        <div class="stat-number" data-counter data-target="5" data-suffix="+">5+</div>
-        <div class="stat-label">Years of Excellence</div>
-        <div class="stat-sub">Industry proven</div>
+        <div class="stat-number" data-counter data-target="1" data-suffix="+">1+</div><div class="stat-label">Year of Excellence</div>
+        <div class="stat-sub">Proudly Indian startup</div>
       </div>
       <div class="stat-item reveal delay-300">
-        <div class="stat-number" data-counter data-target="99" data-suffix="%">99%</div>
-        <div class="stat-label">Client Satisfaction</div>
+        <div class="stat-number" data-counter data-target="100" data-suffix="%">100%</div><div class="stat-label">Client Satisfaction</div>
         <div class="stat-sub">4.9★ average rating</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── WHY CHOOSE US ───────────────────────────────────────── -->
-<section class="section" id="why-us" aria-labelledby="why-title">
+<!-- ── INDUSTRY SECTORS MARQUEE ───────────────────────────── -->
+<div class="industries-strip" aria-label="Industries we serve" style="
+  overflow:hidden; padding:20px 0; background:var(--bg-secondary);
+  border-top:1px solid var(--border-color); border-bottom:1px solid var(--border-color);
+">
+  <div style="font-size:0.7rem;color:var(--text-muted);text-align:center;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:12px;">Industries We Serve</div>
+  <div style="display:flex;gap:0;animation:marquee 18s linear infinite;width:max-content;">
+    <div style="display:flex;gap:32px;padding:0 16px;align-items:center;white-space:nowrap;">
+      <span style="display:flex;align-items:center;gap:8px;color:var(--text-secondary);font-size:0.875rem;font-weight:500;">&#128241; Mobile Apps</span>
+      <span style="color:var(--border-color);">|</span>
+      <span style="display:flex;align-items:center;gap:8px;color:var(--text-secondary);font-size:0.875rem;font-weight:500;">&#127783; E-Commerce &amp; Retail</span>
+      <span style="color:var(--border-color);">|</span>
+      <span style="display:flex;align-items:center;gap:8px;color:var(--text-secondary);font-size:0.875rem;font-weight:500;">&#127979; Education &amp; EdTech</span>
+      <span style="color:var(--border-color);">|</span>
+      <span style="display:flex;align-items:center;gap:8px;color:var(--text-secondary);font-size:0.875rem;font-weight:500;">&#127968; Real Estate</span>
+      <span style="color:var(--border-color);">|</span>
+      <span style="display:flex;align-items:center;gap:8px;color:var(--text-secondary);font-size:0.875rem;font-weight:500;">&#128666; Logistics &amp; Supply Chain</span>
+      <span style="color:var(--border-color);">|</span>
+      <span style="display:flex;align-items:center;gap:8px;color:var(--text-secondary);font-size:0.875rem;font-weight:500;">&#127829; Food &amp; Restaurant Tech</span>
+      <span style="color:var(--border-color);">|</span>
+      <span style="display:flex;align-items:center;gap:8px;color:var(--text-secondary);font-size:0.875rem;font-weight:500;">&#129504; AI &amp; SaaS Products</span>
+      <span style="color:var(--border-color);">|</span>
+    </div>
+    <!-- Duplicate for seamless loop -->
+    <div style="display:flex;gap:32px;padding:0 16px;align-items:center;white-space:nowrap;" aria-hidden="true">
+      <span style="display:flex;align-items:center;gap:8px;color:var(--text-secondary);font-size:0.875rem;font-weight:500;">&#128241; Mobile Apps</span>
+      <span style="color:var(--border-color);">|</span>
+      <span style="display:flex;align-items:center;gap:8px;color:var(--text-secondary);font-size:0.875rem;font-weight:500;">&#127783; E-Commerce &amp; Retail</span>
+      <span style="color:var(--border-color);">|</span>
+      <span style="display:flex;align-items:center;gap:8px;color:var(--text-secondary);font-size:0.875rem;font-weight:500;">&#127979; Education &amp; EdTech</span>
+      <span style="color:var(--border-color);">|</span>
+      <span style="display:flex;align-items:center;gap:8px;color:var(--text-secondary);font-size:0.875rem;font-weight:500;">&#127968; Real Estate</span>
+      <span style="color:var(--border-color);">|</span>
+      <span style="display:flex;align-items:center;gap:8px;color:var(--text-secondary);font-size:0.875rem;font-weight:500;">&#128666; Logistics &amp; Supply Chain</span>
+      <span style="color:var(--border-color);">|</span>
+      <span style="display:flex;align-items:center;gap:8px;color:var(--text-secondary);font-size:0.875rem;font-weight:500;">&#127829; Food &amp; Restaurant Tech</span>
+      <span style="color:var(--border-color);">|</span>
+      <span style="display:flex;align-items:center;gap:8px;color:var(--text-secondary);font-size:0.875rem;font-weight:500;">&#129504; AI &amp; SaaS Products</span>
+      <span style="color:var(--border-color);">|</span>
+    </div>
+  </div>
+</div>
+
+<!-- ── FOUNDER STORY ──────────────────────────────────────── -->
+<section class="section" id="founder" style="background:var(--bg-primary);" aria-labelledby="founder-title">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;" class="reveal">
+
+      <!-- Founder visual card -->
+      <div style="position:relative;" class="reveal-left">
+        <!-- Glowing border card -->
+        <div style="
+          background:var(--gradient-primary);border-radius:var(--radius-2xl);
+          padding:2px;box-shadow:var(--shadow-glow);
+        ">
+          <div style="background:var(--bg-secondary);border-radius:calc(var(--radius-2xl) - 2px);padding:40px;">
+            <!-- Avatar -->
+            <div style="display:flex;align-items:center;gap:20px;margin-bottom:28px;">
+              <div style="
+                width:80px;height:80px;border-radius:50%;
+                background:var(--gradient-primary);
+                display:flex;align-items:center;justify-content:center;
+                font-size:1.75rem;font-weight:900;color:#fff;
+                flex-shrink:0;box-shadow:0 4px 20px rgba(249,115,22,0.4);
+              ">DV</div>
+              <div>
+                <div style="font-size:1.125rem;font-weight:700;color:var(--text-primary);">Dharumar Vengatesan</div>
+                <div style="font-size:0.875rem;color:var(--brand-orange);font-weight:600;">Founder &amp; CEO</div>
+                <div style="font-size:0.8rem;color:var(--text-muted);margin-top:2px;">RiskFreeFeel Technologies</div>
+              </div>
+            </div>
+
+            <!-- Quote -->
+            <div style="
+              border-left:3px solid var(--brand-orange);
+              padding-left:20px;margin-bottom:28px;
+            ">
+              <p style="font-size:1rem;line-height:1.7;color:var(--text-secondary);font-style:italic;">
+                &ldquo;I started RiskFreeFeel because I saw too many businesses get burned by software projects that failed. My promise is simple — you get what you paid for, delivered on time, with zero surprises.&rdquo;
+              </p>
+            </div>
+
+            <!-- Journey milestones -->
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+              <div style="text-align:center;padding:16px;background:var(--bg-glass);border-radius:var(--radius-md);border:1px solid var(--border-color);">
+                <div style="font-size:1.5rem;font-weight:800;color:var(--brand-orange);">2024</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);margin-top:2px;">Founded</div>
+              </div>
+              <div style="text-align:center;padding:16px;background:var(--bg-glass);border-radius:var(--radius-md);border:1px solid var(--border-color);">
+                <div style="font-size:1.5rem;font-weight:800;color:var(--brand-blue);">15+</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);margin-top:2px;">Projects Done</div>
+              </div>
+              <div style="text-align:center;padding:16px;background:var(--bg-glass);border-radius:var(--radius-md);border:1px solid var(--border-color);">
+                <div style="font-size:1.5rem;font-weight:800;color:var(--brand-violet);">20+</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);margin-top:2px;">Happy Clients</div>
+              </div>
+              <div style="text-align:center;padding:16px;background:var(--bg-glass);border-radius:var(--radius-md);border:1px solid var(--border-color);">
+                <div style="font-size:1.5rem;font-weight:800;color:var(--brand-green);">100%</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);margin-top:2px;">On-Time Delivery</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating badge -->
+        <div style="
+          position:absolute;top:-16px;right:-16px;
+          background:var(--gradient-warm);color:#fff;
+          border-radius:var(--radius-full);padding:8px 16px;
+          font-size:0.75rem;font-weight:700;letter-spacing:0.04em;
+          box-shadow:0 4px 15px rgba(249,115,22,0.4);
+          white-space:nowrap;
+        ">&#127470;&#127475; Proudly Indian</div>
+      </div>
+
+      <!-- Story text -->
+      <div class="reveal-right">
+        <div class="section-label" style="margin-bottom:16px;">Our Founding Story</div>
+        <h2 class="section-title" style="text-align:left;" id="founder-title">
+          Born From a Simple Belief:<br />
+          <span class="gradient-text">Tech Should Never Let You Down</span>
+        </h2>
+        <div class="gradient-separator" style="margin:16px 0 28px;"></div>
+
+        <p class="body-md" style="margin-bottom:18px;">
+          In 2024, <strong>Dharumar Vengatesan</strong> — a passionate developer with years of hands-on experience — founded RiskFreeFeel Technologies with one bold mission: <strong>make great software accessible to every business, startup, and entrepreneur in India and beyond.</strong>
+        </p>
+
+        <p class="body-md" style="margin-bottom:18px;">
+          The name says it all. <em>"RiskFreeFeel"</em> — every client who works with us should feel completely safe, confident, and stress-free. No hidden costs. No missed deadlines. No broken promises. Just clean, working software that drives real results.
+        </p>
+
+        <p class="body-md" style="margin-bottom:28px;">
+          Today we power mobile apps for <strong>e-commerce brands</strong>, booking platforms for <strong>real estate firms</strong>, delivery apps for <strong>logistics companies</strong>, ordering systems for <strong>restaurants</strong>, and learning platforms for <strong>EdTech startups</strong> — all built with the same obsession for quality.
+        </p>
+
+        <!-- Value pills -->
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px;">
+          <span style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.3);border-radius:var(--radius-full);font-size:0.8125rem;font-weight:600;color:var(--brand-orange);">&#9989; Zero Hidden Costs</span>
+          <span style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;background:rgba(14,165,233,0.1);border:1px solid rgba(14,165,233,0.3);border-radius:var(--radius-full);font-size:0.8125rem;font-weight:600;color:var(--brand-blue);">&#9989; On-Time Delivery</span>
+          <span style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.3);border-radius:var(--radius-full);font-size:0.8125rem;font-weight:600;color:var(--brand-violet);">&#9989; Milestone-Based Payment</span>
+          <span style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.3);border-radius:var(--radius-full);font-size:0.8125rem;font-weight:600;color:var(--brand-green);">&#9989; Source Code Ownership</span>
+          <span style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.3);border-radius:var(--radius-full);font-size:0.8125rem;font-weight:600;color:var(--brand-orange);">&#9989; Free 6-Month Support</span>
+        </div>
+
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="pages/about.html" class="btn btn-primary">Meet the Full Team &#8594;</a>
+          <a href="pages/contact.html" class="btn btn-outline">&#128222; Talk to Dharumar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+
+    <!-- ── CO‑FOUNDER STORY ──────────────────────────────────────── -->
+    <section class="section" id="cofounder" style="background:var(--bg-primary);" aria-labelledby="cofounder-title">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;" class="reveal">
+
+          <!-- Co‑Founder visual card -->
+          <div style="position:relative;" class="reveal-left">
+            <div style="
+              background:var(--gradient-primary);border-radius:var(--radius-2xl);
+              padding:2px;box-shadow:var(--shadow-glow);
+            ">
+              <div style="background:var(--bg-secondary);border-radius:calc(var(--radius-2xl) - 2px);padding:40px;">
+                <!-- Avatar -->
+                <div style="display:flex;align-items:center;gap:20px;margin-bottom:28px;">
+                  <div style="
+                    width:80px;height:80px;border-radius:50%;
+                    background:var(--gradient-primary);
+                    display:flex;align-items:center;justify-content:center;
+                    font-size:1.75rem;font-weight:900;color:#fff;
+                    flex-shrink:0;box-shadow:0 4px 20px rgba(0,87,255,0.4);
+                  ">MV</div>
+                  <div>
+                    <div style="font-size:1.125rem;font-weight:700;color:var(--text-primary);">M Venkatesh</div>
+                    <div style="font-size:0.875rem;color:var(--brand-blue);font-weight:600;">Co‑Founder &amp; Full Stack Developer</div>
+                    <div style="font-size:0.8rem;color:var(--text-muted);margin-top:2px;">RiskFreeFeel Technologies</div>
+                    <div style="font-size:0.9rem;color:var(--brand-orange);margin-top:6px;">Contact: +91 6379102578</div>
+                  </div>
+                </div>
+
+                <!-- Quote -->
+                <div style="
+                  border-left:3px solid var(--brand-blue);
+                  padding-left:20px;margin-bottom:28px;
+                ">
+                  <p style="font-size:1rem;line-height:1.7;color:var(--text-secondary);font-style:italic;">
+                    “Building robust full‑stack solutions is my passion. I ensure every line of code meets the highest standards, delivering scalable products that empower our clients.”
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Story text -->
+          <div class="reveal-right">
+            <div class="section-label" style="margin-bottom:16px;">Co‑Founder Story</div>
+            <h2 class="section-title" style="text-align:left;" id="cofounder-title">
+              Driven by Innovation<br/>
+              <span class="gradient-text">Full‑Stack Excellence</span>
+            </h2>
+            <div class="gradient-separator" style="margin:16px 0 28px;"></div>
+            <p class="body-md" style="margin-bottom:18px;">
+              With 4 years of experience mastering front‑end and back‑end technologies, M brings expertise in JavaScript, Node.js, React, and cloud architectures, ensuring our solutions are both performant and future‑ready.
+            </p>
+            <div class="body-md" style="margin-bottom:28px;">
+              He leads our development teams, mentors junior engineers, and drives continuous integration pipelines that keep delivery fast and reliable.
+            </div>
+            <div style="display:flex;gap:16px;flex-wrap:wrap;">
+              <a href="pages/contact.html" class="btn btn-primary">Contact M</a>
+              <a href="pages/about.html" class="btn btn-outline">Learn More</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why-us" aria-labelledby="why-title">
   <div class="container">
     <div class="section-header">
       <div class="section-label">Why RiskFreeFeel</div>
@@ -273,17 +497,17 @@
 
     <div class="why-grid">
       <div class="why-card reveal">
-        <div class="why-icon" style="background:rgba(0,87,255,0.12);">🛡️</div>
+        <div class="why-icon" style="background:rgba(249,115,22,0.12);">🛡️</div>
         <h3 class="why-title">Zero-Risk Delivery</h3>
         <p class="why-desc">Our structured development process, milestone-based billing, and money-back guarantee ensure you never lose. That's our promise.</p>
       </div>
       <div class="why-card reveal delay-100">
-        <div class="why-icon" style="background:rgba(124,58,237,0.12);">⚡</div>
+        <div class="why-icon" style="background:rgba(139,92,246,0.12);">⚡</div>
         <h3 class="why-title">Lightning-Fast Development</h3>
         <p class="why-desc">Agile sprints, CI/CD pipelines, and a battle-tested team deliver production-ready software in record time without sacrificing quality.</p>
       </div>
       <div class="why-card reveal delay-200">
-        <div class="why-icon" style="background:rgba(6,182,212,0.12);">🤖</div>
+        <div class="why-icon" style="background:rgba(14,165,233,0.12);">🤖</div>
         <h3 class="why-title">AI-First Approach</h3>
         <p class="why-desc">Every solution is powered by intelligent algorithms. From smart recommendations to predictive analytics, we embed AI at the core.</p>
       </div>
@@ -298,7 +522,7 @@
         <p class="why-desc">24/7 technical support, dedicated project managers, and 6-month free maintenance keep your software running flawlessly post-launch.</p>
       </div>
       <div class="why-card reveal delay-500">
-        <div class="why-icon" style="background:rgba(239,68,68,0.12);">📈</div>
+        <div class="why-icon" style="background:rgba(244,63,94,0.12);">📈</div>
         <h3 class="why-title">Measurable ROI</h3>
         <p class="why-desc">Data-driven decisions and performance tracking ensure every dollar invested delivers measurable business impact and growth.</p>
       </div>
@@ -319,21 +543,21 @@
     <div class="services-grid">
       <!-- Service 1 -->
       <div class="service-card reveal">
-        <div class="service-icon" style="background:rgba(0,87,255,0.12);">📱</div>
+        <div class="service-icon" style="background:rgba(249,115,22,0.12);">📱</div>
         <h3 class="service-title">Cross-Platform Mobile Development</h3>
         <p class="service-desc">One codebase, both platforms. We build beautiful, high-performance Flutter apps for Android and iOS that feel truly native.</p>
         <a href="pages/services.html#mobile" class="service-link">Learn more →</a>
       </div>
       <!-- Service 2 -->
       <div class="service-card reveal delay-100">
-        <div class="service-icon" style="background:rgba(124,58,237,0.12);">🏢</div>
+        <div class="service-icon" style="background:rgba(139,92,246,0.12);">🏢</div>
         <h3 class="service-title">Enterprise Application Development</h3>
         <p class="service-desc">Scalable, secure, and mission-critical enterprise solutions built to handle millions of users and complex business workflows.</p>
         <a href="pages/services.html#enterprise" class="service-link">Learn more →</a>
       </div>
       <!-- Service 3 -->
       <div class="service-card reveal delay-200">
-        <div class="service-icon" style="background:rgba(6,182,212,0.12);">⚙️</div>
+        <div class="service-icon" style="background:rgba(14,165,233,0.12);">⚙️</div>
         <h3 class="service-title">Custom Business Software</h3>
         <p class="service-desc">Tailor-made ERP, CRM, HRM, and workflow automation tools designed precisely for your business processes.</p>
         <a href="pages/services.html#custom" class="service-link">Learn more →</a>
@@ -354,28 +578,28 @@
       </div>
       <!-- Service 6 -->
       <div class="service-card reveal delay-100">
-        <div class="service-icon" style="background:rgba(239,68,68,0.12);">🎨</div>
+        <div class="service-icon" style="background:rgba(244,63,94,0.12);">🎨</div>
         <h3 class="service-title">UI/UX Design</h3>
         <p class="service-desc">Human-centered design that delights users. From wireframes to pixel-perfect interfaces with accessibility-first principles.</p>
         <a href="pages/services.html#uiux" class="service-link">Learn more →</a>
       </div>
       <!-- Service 7 -->
       <div class="service-card reveal delay-200">
-        <div class="service-icon" style="background:rgba(0,87,255,0.12);">🔌</div>
+        <div class="service-icon" style="background:rgba(249,115,22,0.12);">🔌</div>
         <h3 class="service-title">Backend API Development</h3>
         <p class="service-desc">Robust RESTful & GraphQL APIs with Node.js, microservices architecture, and enterprise-grade security standards.</p>
         <a href="pages/services.html#api" class="service-link">Learn more →</a>
       </div>
       <!-- Service 8 -->
       <div class="service-card reveal delay-300">
-        <div class="service-icon" style="background:rgba(124,58,237,0.12);">☁️</div>
+        <div class="service-icon" style="background:rgba(139,92,246,0.12);">☁️</div>
         <h3 class="service-title">Cloud Integration</h3>
         <p class="service-desc">AWS, GCP, Firebase, and Azure integrations for infinitely scalable, reliable, and cost-optimized cloud infrastructure.</p>
         <a href="pages/services.html#cloud" class="service-link">Learn more →</a>
       </div>
       <!-- Service 9 -->
       <div class="service-card reveal">
-        <div class="service-icon" style="background:rgba(6,182,212,0.12);">🤖</div>
+        <div class="service-icon" style="background:rgba(14,165,233,0.12);">🤖</div>
         <h3 class="service-title">AI-Powered Solutions</h3>
         <p class="service-desc">Machine learning, NLP, computer vision, and generative AI integrations that give your product an intelligent competitive edge.</p>
         <a href="pages/services.html#ai" class="service-link">Learn more →</a>
@@ -492,7 +716,7 @@
       <!-- Project 1 -->
       <article class="portfolio-card reveal" data-category="mobile">
         <div class="portfolio-thumb">
-          <div class="portfolio-thumb-bg" style="background:linear-gradient(135deg,#0057FF22,#7C3AED22);">📱</div>
+          <div class="portfolio-thumb-bg" style="background:linear-gradient(135deg,#0EA5E922,#8B5CF622);">📱</div>
           <div class="portfolio-overlay">
             <a href="pages/portfolio.html" class="btn btn-ghost btn-sm" style="color:#fff;border-color:#fff;">View Case</a>
           </div>
@@ -552,7 +776,7 @@
       <!-- Project 4 -->
       <article class="portfolio-card reveal delay-300" data-category="ai">
         <div class="portfolio-thumb">
-          <div class="portfolio-thumb-bg" style="background:linear-gradient(135deg,#9C27B022,#7C3AED22);">🤖</div>
+          <div class="portfolio-thumb-bg" style="background:linear-gradient(135deg,#9C27B022,#8B5CF622);">🤖</div>
           <div class="portfolio-overlay">
             <a href="pages/portfolio.html" class="btn btn-ghost btn-sm" style="color:#fff;border-color:#fff;">View Case</a>
           </div>
@@ -572,7 +796,7 @@
       <!-- Project 5 -->
       <article class="portfolio-card reveal" data-category="mobile">
         <div class="portfolio-thumb">
-          <div class="portfolio-thumb-bg" style="background:linear-gradient(135deg,#06B6D422,#0057FF22);">📦</div>
+          <div class="portfolio-thumb-bg" style="background:linear-gradient(135deg,#06B6D422,#0EA5E922);">📦</div>
           <div class="portfolio-overlay">
             <a href="pages/portfolio.html" class="btn btn-ghost btn-sm" style="color:#fff;border-color:#fff;">View Case</a>
           </div>
@@ -611,7 +835,7 @@
     </div>
 
     <div style="text-align:center;margin-top:48px;">
-      <a href="pages/portfolio.html" class="btn btn-primary btn-lg">View All Projects →</a>
+      <a href="pages/services.html" class="btn btn-primary btn-lg">Explore Our Services →</a>
     </div>
   </div>
 </section>
@@ -676,7 +900,7 @@
           <div class="testimonial-quote">"</div>
           <p class="testimonial-text">The AI customer support system they built cut our support costs by 60% and improved customer satisfaction scores by 40%. The ROI was visible within 3 months of deployment.</p>
           <div class="testimonial-author">
-            <div class="testimonial-avatar" style="background:linear-gradient(135deg,#7C3AED,#9D6FFF)">JL</div>
+            <div class="testimonial-avatar" style="background:linear-gradient(135deg,#8B5CF6,#9D6FFF)">JL</div>
             <div>
               <div class="testimonial-name">Jennifer Liu</div>
               <div class="testimonial-role">VP Operations, GlobalRetail Corp</div>
@@ -765,10 +989,10 @@
   <div class="cta-inner">
     <div class="section-label" style="margin:0 auto 20px;">🚀 Ready to Start?</div>
     <h2 class="cta-title" id="cta-title">Transform Your Vision Into<br />Reality — Risk Free</h2>
-    <p class="cta-subtitle">Join 50+ companies who chose RiskFreeFeel Technologies to build their digital future. Free consultation, transparent pricing, guaranteed delivery.</p>
+    <p class="cta-subtitle">Join 20+ companies who chose RiskFreeFeel Technologies to build their digital future. Free consultation, transparent pricing, guaranteed delivery.</p>
     <div class="cta-buttons">
       <a href="pages/contact.html" class="btn btn-primary btn-lg" id="cta-contact">📩 Get Free Consultation</a>
-      <a href="tel:+15551234567" class="btn btn-outline btn-lg" id="cta-call">📞 Call Us Now</a>
+      <a href="tel:+918189907917" class="btn btn-outline btn-lg" id="cta-call">📞 Call Us Now</a>
     </div>
     <p style="margin-top:24px;font-size:0.85rem;color:var(--text-muted);">
       ✓ Free 30-min consultation &nbsp;·&nbsp; ✓ No obligation quote &nbsp;·&nbsp; ✓ Response within 24 hours
@@ -782,12 +1006,8 @@
     <div class="footer-top">
       <!-- Brand Column -->
       <div class="footer-brand">
-        <a href="index.html" class="navbar-logo" style="margin-bottom:0;">
-          <div class="navbar-logo-icon">RF</div>
-          <div class="navbar-logo-text">
-            <span class="navbar-logo-name">RiskFreeFeel</span>
-            <span class="navbar-logo-tagline">Technologies</span>
-          </div>
+        <a href="index.html" class="navbar-logo" style="margin-bottom:12px;">
+          <img src="assets/images/logo-dark.svg" alt="RiskFreeFeel Technologies" height="48" style="height:48px;width:auto;display:block;filter:brightness(1.1);" />
         </a>
         <p class="footer-brand-desc">Solution without risk, success without stress. We build world-class software that empowers businesses to grow, innovate, and lead in the digital era.</p>
         <div class="footer-social">
@@ -829,10 +1049,8 @@
         <h3 class="footer-col-title">Company</h3>
         <ul class="footer-links">
           <li><a href="pages/about.html" class="footer-link">About Us</a></li>
-          <li><a href="pages/portfolio.html" class="footer-link">Portfolio</a></li>
           <li><a href="pages/technologies.html" class="footer-link">Technologies</a></li>
           <li><a href="pages/pricing.html" class="footer-link">Pricing</a></li>
-          <li><a href="pages/blog.html" class="footer-link">Blog</a></li>
           <li><a href="pages/careers.html" class="footer-link">Careers</a></li>
           <li><a href="pages/contact.html" class="footer-link">Contact</a></li>
         </ul>
@@ -841,21 +1059,21 @@
       <!-- Contact Column -->
       <div>
         <h3 class="footer-col-title">Contact Us</h3>
-        <a href="tel:+15551234567" class="footer-contact-item">
+        <a href="tel:+918189907917" class="footer-contact-item">
           <div class="footer-contact-icon">📞</div>
-          <span>+1 (555) 123-4567</span>
+          <span>+91 8189907917</span>
         </a>
         <a href="mailto:info@riskfreefeel.co.in" class="footer-contact-item">
           <div class="footer-contact-icon">📧</div>
           <span>info@riskfreefeel.co.in</span>
         </a>
-        <a href="https://wa.me/15551234567" class="footer-contact-item" target="_blank" rel="noopener">
+        <a href="https://wa.me/918189907917" class="footer-contact-item" target="_blank" rel="noopener">
           <div class="footer-contact-icon">💬</div>
           <span>WhatsApp Us</span>
         </a>
         <div class="footer-contact-item">
           <div class="footer-contact-icon">📍</div>
-          <span>India | Remote Worldwide</span>
+          <span>23, R.K.Mills 'B' Colony, Peelamedu Pudur,<br>Coimbatore – 641 004, Tamil Nadu</span>
         </div>
         <div style="margin-top:20px;">
           <a href="pages/contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Get a Free Quote</a>
@@ -864,7 +1082,7 @@
     </div>
 
     <div class="footer-bottom">
-      <p class="footer-copyright">© 2024 RiskFreeFeel Technologies. All rights reserved. Built with ❤️ for innovation.</p>
+      <p class="footer-copyright">© 2025 RiskFreeFeel Technologies. All rights reserved. Built with ❤️ for innovation.</p>
       <div class="footer-legal">
         <a href="#" class="footer-legal-link">Privacy Policy</a>
         <a href="#" class="footer-legal-link">Terms of Service</a>
@@ -877,7 +1095,7 @@
 <!-- ── FLOATING BUTTONS ────────────────────────────────────── -->
 <!-- WhatsApp -->
 <div class="whatsapp-fab">
-  <a href="https://wa.me/15551234567?text=Hi! I'm interested in your services." 
+  <a href="https://wa.me/918189907917?text=Hi! I'm interested in your services." 
      class="whatsapp-btn" target="_blank" rel="noopener" 
      aria-label="Chat on WhatsApp" id="whatsapp-fab">
     <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
