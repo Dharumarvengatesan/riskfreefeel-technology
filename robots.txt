@@ -1,5 +1,15 @@
+﻿# RiskFreeFeel Technologies — robots.txt
+# Primary domain: https://www.riskfreefeel.co.in
+
+# Allow all legitimate search engine bots to crawl public content
 User-agent: *
 Allow: /
-Disallow: /assets/
 
-Sitemap: https://riskfreefeel.co.in/sitemap.xml
+# Block private / system paths that should not be indexed
+Disallow: /api/
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Sitemap location
+Sitemap: https://www.riskfreefeel.co.in/sitemap.xml
