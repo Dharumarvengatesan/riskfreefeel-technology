@@ -505,16 +505,19 @@ svg {
     padding: 24px 20px !important;
   }
 
-  /* ── 5.28 FLOATING BADGES — prevent overflow ──
-     Absolute-positioned badges with negative offsets bleed outside viewport */
+  /* ── 5.28 FLOATING BADGES & RIBBONS — prevent photo/text collisions on mobile ──
+     Absolute-positioned badges (both top:-16px and top:20px) bleed outside viewport or cover photos/text */
   div[style*="position:absolute;top:-16px;right:-12px"],
-  div[style*="position:absolute;top:-16px;right:-16px"] {
+  div[style*="position:absolute;top:-16px;right:-16px"],
+  div[style*="position:absolute;top:20px;right:20px"],
+  div[style*="position:absolute;top:20px"] {
     position: static !important;
     display: inline-block !important;
     margin-bottom: 12px !important;
     font-size: 0.7rem !important;
     white-space: normal !important;
-    word-break: break-word;
+    word-break: break-word !important;
+    max-width: 100% !important;
   }
 
   /* Allow overflow:visible on the relative-positioned parent 
@@ -522,22 +525,46 @@ svg {
   #founder .container div[style*="position:relative"],
   #cofounder .container div[style*="position:relative"],
   #venkatesh .container div[style*="position:relative"],
+  #team .container div[style*="position:relative"],
   section#founder div[style*="position:relative"] {
     overflow: visible;
   }
 
-  /* ── 5.29 TEAM CARD AVATARS ── */
-  /* Photo + identity row — reduce gap */
-  div[style*="align-items:center;gap:22px"] {
+  /* ── 5.29 TEAM CARD AVATARS & PROFILE IMAGES ── */
+  /* Photo + identity row — reduce gap and prevent flex squeeze */
+  div[style*="align-items:center;gap:22px"],
+  div[style*="align-items:center;gap:20px"] {
     gap: 14px !important;
   }
 
-  /* Team member avatar circle */
+  /* All avatar circular image containers */
+  div[style*="border-radius:50%"] {
+    flex-shrink: 0 !important;
+  }
+
+  /* Team member avatar circle size on mobile */
   div[style*="width:90px;height:90px;border-radius:50%"] {
     width: 72px !important;
     height: 72px !important;
     min-width: 72px !important;
     flex-shrink: 0 !important;
+  }
+
+  div[style*="width:120px;height:120px;border-radius:50%"] {
+    width: 88px !important;
+    height: 88px !important;
+    min-width: 88px !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Image tag styling inside all avatars & cards */
+  div[style*="border-radius:50%"] img,
+  .card img,
+  .service-card img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center top !important;
   }
 
   /* ── 5.30 VENKATESH STRENGTH GRID ──
