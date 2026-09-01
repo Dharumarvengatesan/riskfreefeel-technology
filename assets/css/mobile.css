@@ -505,23 +505,25 @@ svg {
     padding: 24px 20px !important;
   }
 
-  /* ── 5.28 FLOATING BADGES & RIBBONS — top right alignment inside card on mobile ──
-     All founder and co-founder badges lock to top right inside card without bottom bleeding */
+  /* ── 5.28 FLOATING BADGES & RIBBONS — top right alignment on mobile ──
+     Badges sit statically aligned to top-right above content so they never cover founder names or photos */
   .founder-badge,
   div[style*="position:absolute;top:16px;right:16px"],
   div[style*="position:absolute;top:20px;right:20px"],
   div[style*="position:absolute;top:20px"],
   div[style*="position:absolute;top:-16px"] {
-    position: absolute !important;
-    top: 12px !important;
-    right: 12px !important;
-    left: auto !important;
-    bottom: auto !important;
-    z-index: 10 !important;
-    font-size: 0.68rem !important;
-    padding: 4px 10px !important;
-    white-space: nowrap !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+    position: static !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    margin-bottom: 14px !important;
+    width: fit-content !important;
+    max-width: 100% !important;
+    font-size: 0.72rem !important;
+    padding: 5px 12px !important;
+    white-space: normal !important;
+    word-break: break-word !important;
   }
 
   /* Allow overflow:visible on the relative-positioned parent 
