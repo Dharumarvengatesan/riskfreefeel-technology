@@ -208,7 +208,16 @@
       <!-- Founder Card -->
       <div style="position:relative;" class="reveal-left">
         <div style="background:var(--gradient-primary);border-radius:var(--radius-2xl);padding:2px;box-shadow:var(--shadow-glow);">
-          <div style="background:var(--bg-secondary);border-radius:calc(var(--radius-2xl) - 2px);padding:44px;">
+          <div style="background:var(--bg-secondary);border-radius:calc(var(--radius-2xl) - 2px);padding:44px;position:relative;">
+            <!-- Badge at top right inside card -->
+            <div style="
+              position:absolute;top:16px;right:16px;z-index:5;
+              background:var(--gradient-warm);color:#fff;
+              border-radius:var(--radius-full);padding:6px 14px;
+              font-size:0.75rem;font-weight:700;
+              box-shadow:0 4px 16px rgba(249,115,22,0.45);
+              white-space:nowrap;
+            ">&#127970; 100% Client Success</div>
 
             <!-- Avatar + Name -->
             <div style="display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:32px;">
@@ -252,15 +261,6 @@
             </a>
           </div>
         </div>
-
-        <!-- Floating badge -->
-        <div style="
-          position:absolute;top:-16px;right:-12px;
-          background:var(--gradient-warm);color:#fff;
-          border-radius:var(--radius-full);padding:8px 18px;
-          font-size:0.75rem;font-weight:700;
-          box-shadow:0 4px 16px rgba(249,115,22,0.45);
-        ">&#127970; 100% Client Success</div>
       </div>
 
       <!-- Story Text -->
