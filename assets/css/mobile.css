@@ -1,0 +1,627 @@
+/* ============================================================
+   RiskFreeFeel Technologies — Mobile Responsive Fixes
+   Scope: <= 1024px tablet, <= 768px mobile, <= 480px small phones
+   Rule: Desktop styles (> 1024px) are NEVER modified here.
+   ============================================================ */
+
+/* ── Global mobile safety ─────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+img, video, iframe, embed, object {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ── 1024px — Tablet ──────────────────────────────────────── */
+@media (max-width: 1024px) {
+
+  .hero-section {
+    padding: 120px 20px 80px;
+  }
+
+  .footer {
+    padding: 60px 20px 32px;
+  }
+}
+
+/* ── 768px — Mobile ──────────────────────────────────────── */
+@media (max-width: 768px) {
+
+  /* Container */
+  .container {
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  /* Section padding */
+  .section {
+    padding: 64px 0;
+  }
+
+  .section-header {
+    margin-bottom: 32px;
+  }
+
+  /* ── FOUNDER SECTION (index.html & about.html #founder)
+     Inline style: display:grid;grid-template-columns:1fr 1fr / 1fr 1.2fr
+     We must use !important because this is set as an inline style. */
+  #founder .container > div[style*="grid"],
+  #founder .container > .reveal[style*="grid"],
+  section#founder div[style*="grid-template-columns"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 32px !important;
+  }
+
+  /* ── LEADERSHIP TEAM (about.html #team)
+     Inline style: display:grid;grid-template-columns:1fr 1fr 1fr */
+  #team .container div[style*="grid-template-columns"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+    width: 100% !important;
+  }
+
+  #team .container div[style*="grid-template-columns"] > .card {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* ── SEENIVASAN CO-FOUNDER (about.html #cofounder)
+     Inline style: display:grid;grid-template-columns:1.15fr 1fr;gap:72px
+     Target only the outer 2-col layout, not the inner mini stat grids */
+  #cofounder .container > div[style*="1.15fr"],
+  #cofounder .container > div[style*="gap:72px"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 32px !important;
+  }
+
+  /* Card first, then text on mobile for Seenivasan */
+  #cofounder .container .reveal-right {
+    order: -1;
+  }
+
+  /* ── VENKATESH CO-FOUNDER (about.html #venkatesh)
+     Inline style: display:grid;grid-template-columns:1fr 1.15fr;gap:72px
+     Target only the outer 2-col layout, not the inner mini stat grids */
+  #venkatesh .container > div[style*="1.15fr"],
+  #venkatesh .container > div[style*="gap:72px"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 32px !important;
+  }
+
+  /* Card first, then text on mobile for Venkatesh */
+  #venkatesh .container .reveal-right {
+    order: -1;
+  }
+
+  /* ── MISSION / VISION / VALUES (about.html #mission)
+     Inline style: display:grid;grid-template-columns:repeat(3,1fr) */
+  #mission .container div[style*="grid-template-columns"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    width: 100% !important;
+  }
+
+  #mission .container div[style*="grid-template-columns"] > .card {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* ── CARD PADDING REDUCTION ──
+     Cards with inline padding:44px and padding:40px */
+  .card[style*="padding:44px"],
+  div[style*="padding:44px"] {
+    padding: 24px !important;
+  }
+
+  .card[style*="padding:40px"],
+  div.card[style*="padding:40px"] {
+    padding: 24px !important;
+  }
+
+  /* Inner profile card wrapper (gradient border inner div) */
+  div[style*="border-radius:calc(var(--radius-2xl) - 2px)"] {
+    padding: 24px 20px !important;
+  }
+
+  /* ── FLOATING BADGES (negative position causes overflow)
+     These are divs with position:absolute;top:-16px;right:-12px/-16px */
+  div[style*="position:absolute;top:-16px;right:-12px"],
+  div[style*="position:absolute;top:-16px;right:-16px"] {
+    position: static !important;
+    display: inline-block !important;
+    margin-bottom: 12px !important;
+    font-size: 0.7rem !important;
+  }
+
+  /* Remove overflow:hidden from relative wrapper so static badge flows */
+  #founder .container div[style*="position:relative"],
+  #cofounder .container div[style*="position:relative"],
+  #venkatesh .container div[style*="position:relative"],
+  section#founder div[style*="position:relative"] {
+    overflow: visible;
+  }
+
+  /* Co-Founder badge inside card (top:20px;right:20px) — keep in place
+     but shrink on very narrow screens */
+  div[style*="position:absolute;top:20px;right:20px"] {
+    font-size: 0.6rem !important;
+    padding: 4px 10px !important;
+    max-width: calc(100% - 110px) !important;
+    white-space: normal !important;
+    word-break: break-word;
+  }
+
+  /* ── PHOTO + IDENTITY ROW inside team cards
+     (display:flex;align-items:center;gap:22px) */
+  div[style*="align-items:center;gap:22px"] {
+    gap: 14px !important;
+  }
+
+  /* Team card avatar */
+  div[style*="width:90px;height:90px;border-radius:50%"] {
+    width: 72px !important;
+    height: 72px !important;
+    min-width: 72px !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* ── STATS GRID ── */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .stat-item {
+    padding: 28px 16px;
+  }
+
+  /* ── SERVICES GRID ── */
+  .services-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ── WHY GRID ── */
+  .why-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ── PROCESS TIMELINE ── */
+  .process-timeline {
+    grid-template-columns: 1fr !important;
+  }
+  .process-timeline::before {
+    display: none !important;
+  }
+
+  /* ── CONTACT ── */
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .contact-form-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ── FOOTER ── */
+  .footer-top {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .footer {
+    padding: 48px 20px 28px;
+  }
+
+  /* ── PRICING ── */
+  .pricing-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .pricing-card.featured {
+    transform: none !important;
+  }
+
+  /* ── PORTFOLIO ── */
+  .portfolio-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ── TESTIMONIAL ── */
+  .testimonial-card {
+    width: calc(100vw - 40px) !important;
+    min-width: 0 !important;
+  }
+  .testimonials-wrapper {
+    overflow: hidden;
+  }
+
+  /* ── NAVBAR ── */
+  .navbar {
+    padding: 0 16px;
+  }
+  .navbar-inner {
+    gap: 12px;
+  }
+  .navbar-dropdown-menu {
+    left: auto !important;
+    right: 0;
+    transform: none !important;
+  }
+
+  /* ── HERO ── */
+  .hero-section {
+    padding: 100px 20px 60px;
+  }
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .hero-stat-value {
+    font-size: 1.4rem;
+  }
+
+  /* Reduce hero orb size to prevent horizontal overflow */
+  .hero-orb-1,
+  .hero-orb-2 {
+    width: 300px !important;
+    height: 300px !important;
+    opacity: 0.08 !important;
+  }
+
+  /* ── PAGE HERO ── */
+  .page-hero {
+    padding: 120px 20px 60px;
+  }
+
+  .page-hero-inner[style*="padding:120px 24px 80px"],
+  div[style*="padding:120px 24px 80px"] {
+    padding: 80px 20px 48px !important;
+  }
+
+  /* ── CTA SECTION ── */
+  .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .cta-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* ── FABs ── */
+  .whatsapp-fab {
+    bottom: 16px !important;
+    left: 16px !important;
+  }
+  .chatbot-fab {
+    bottom: 16px !important;
+    right: 16px !important;
+  }
+  .chatbot-window {
+    width: calc(100vw - 32px) !important;
+    right: 0 !important;
+    left: auto !important;
+  }
+
+  /* Hide WhatsApp tooltip on mobile (causes overflow) */
+  .whatsapp-tooltip {
+    display: none !important;
+  }
+
+  /* ── INLINE BUTTON ROWS ── */
+  div[style*="display:flex;gap:14px;flex-wrap:wrap"],
+  div[style*="display:flex;gap:16px;flex-wrap:wrap"] {
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+  }
+
+  /* About page hero CTA */
+  div[style*="display:flex;justify-content:center;gap:16px;flex-wrap:wrap"] {
+    gap: 12px !important;
+  }
+
+  /* ── TEXT OVERFLOW PROTECTION ── */
+  h1, h2, h3, h4, h5, h6 {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  p, li, a {
+    overflow-wrap: break-word;
+  }
+
+  /* Venkatesh 7-strength mini-grid: keep 2-col but target only this specific one */
+  div[style*="grid-template-columns:1fr 1fr;gap:12px;margin-bottom:36px"] {
+    grid-template-columns: 1fr !important;
+  }
+  div[style*="grid-column:1/-1"] {
+    grid-column: 1 / -1 !important;
+  }
+}
+
+/* ── 480px — Small phones ─────────────────────────────────── */
+@media (max-width: 480px) {
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  .section-header {
+    margin-bottom: 28px;
+  }
+
+  /* ── Hero ── */
+  .hero-section {
+    padding: 80px 16px 48px;
+  }
+
+  .hero-title {
+    font-size: clamp(1.75rem, 8vw, 2.5rem) !important;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* ── Page hero ── */
+  .page-hero {
+    padding: 100px 16px 48px;
+  }
+
+  .page-hero-inner[style*="padding"],
+  div[style*="padding:120px 24px 80px"] {
+    padding: 72px 16px 40px !important;
+  }
+
+  /* ── Typography ── */
+  .section-title {
+    font-size: clamp(1.4rem, 6vw, 2rem) !important;
+  }
+
+  .display-lg {
+    font-size: clamp(1.6rem, 8vw, 2.5rem) !important;
+  }
+
+  .cta-title {
+    font-size: clamp(1.5rem, 6vw, 2rem) !important;
+  }
+
+  .body-md {
+    font-size: 0.9375rem;
+  }
+
+  /* ── Cards ── */
+  .card,
+  .service-card,
+  .why-card {
+    padding: 20px !important;
+  }
+
+  .card[style*="padding:40px"],
+  div.card[style*="padding:40px"] {
+    padding: 24px 20px !important;
+  }
+
+  .card[style*="padding:44px"],
+  div.card[style*="padding:44px"] {
+    padding: 20px 16px !important;
+  }
+
+  div[style*="border-radius:calc(var(--radius-2xl) - 2px)"] {
+    padding: 20px 16px !important;
+  }
+
+  /* ── Avatars ── */
+  div[style*="width:120px;height:120px;border-radius:50%"] {
+    width: 96px !important;
+    height: 96px !important;
+    min-width: 96px !important;
+  }
+
+  div[style*="width:90px;height:90px;border-radius:50%"] {
+    width: 64px !important;
+    height: 64px !important;
+    min-width: 64px !important;
+  }
+
+  div[style*="width:80px;height:80px;border-radius:50%"] {
+    width: 64px !important;
+    height: 64px !important;
+    min-width: 64px !important;
+  }
+
+  /* ── Buttons ── */
+  .btn-lg {
+    padding: 12px 22px !important;
+    font-size: 0.9rem !important;
+  }
+
+  .btn {
+    padding: 11px 20px;
+    font-size: 0.875rem;
+  }
+
+  /* ── Navbar ── */
+  .navbar {
+    padding: 0 12px;
+  }
+
+  .navbar-inner {
+    height: 60px;
+    gap: 8px;
+  }
+
+  .mobile-menu {
+    top: 60px;
+    padding: 20px 16px;
+  }
+
+  .navbar-logo img {
+    height: 36px !important;
+    width: auto !important;
+  }
+
+  /* ── Stats ── */
+  .stats-grid {
+    grid-template-columns: 1fr 1fr !important;
+    border-radius: var(--radius-lg);
+  }
+
+  .stat-item {
+    padding: 20px 12px;
+  }
+
+  .stat-number {
+    font-size: 1.75rem;
+  }
+
+  /* ── CTA section ── */
+  .cta-section {
+    padding: 60px 16px;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    padding: 40px 16px 24px;
+  }
+
+  .footer-bottom {
+    gap: 8px;
+  }
+
+  .footer-legal {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* ── Services ── */
+  .services-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .service-card {
+    padding: 24px !important;
+  }
+
+  /* ── Process ── */
+  .process-step {
+    padding: 0 8px;
+  }
+
+  /* ── Testimonials ── */
+  .testimonial-card {
+    width: calc(100vw - 32px) !important;
+    padding: 24px 20px;
+  }
+
+  /* ── Contact ── */
+  .contact-info-card {
+    padding: 20px 16px;
+  }
+
+  .contact-form-card {
+    padding: 24px 16px;
+  }
+
+  /* ── Pricing ── */
+  .pricing-card {
+    padding: 24px 20px;
+  }
+
+  /* ── FABs ── */
+  .chatbot-btn {
+    width: 52px !important;
+    height: 52px !important;
+  }
+
+  .whatsapp-btn {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  /* ── Floating badges ── */
+  div[style*="position:absolute;top:-16px;right:-12px"],
+  div[style*="position:absolute;top:-16px;right:-16px"] {
+    font-size: 0.65rem !important;
+    padding: 5px 12px !important;
+  }
+}
+
+/* ── 360px — Very small phones ──────────────────────────── */
+@media (max-width: 360px) {
+
+  .container {
+    padding: 0 12px;
+  }
+
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .navbar-right .btn-sm {
+    padding: 8px 12px !important;
+    font-size: 0.75rem !important;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .stat-item {
+    padding: 16px 8px;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  /* On very small screens, leadership photo + name may still overflow —
+     switch to column layout */
+  div[style*="align-items:center;gap:22px"] {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+  }
+
+  div[style*="width:90px;height:90px;border-radius:50%"] {
+    width: 60px !important;
+    height: 60px !important;
+    min-width: 60px !important;
+  }
+
+  .why-card,
+  .service-card {
+    padding: 18px !important;
+  }
+
+  .btn-lg {
+    padding: 11px 18px !important;
+    font-size: 0.85rem !important;
+  }
+
+  .chatbot-window {
+    width: calc(100vw - 20px) !important;
+  }
+
+  .contact-form-card {
+    padding: 20px 12px !important;
+  }
+}
