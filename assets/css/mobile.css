@@ -509,6 +509,8 @@ svg {
      Absolute-positioned badges (both top:-16px and top:20px) bleed outside viewport or cover photos/text */
   div[style*="position:absolute;top:-16px;right:-12px"],
   div[style*="position:absolute;top:-16px;right:-16px"],
+  div[style*="position:absolute;top:-16px;right:16px"],
+  div[style*="position:absolute;top:-16px"],
   div[style*="position:absolute;top:20px;right:20px"],
   div[style*="position:absolute;top:20px"] {
     position: static !important;
