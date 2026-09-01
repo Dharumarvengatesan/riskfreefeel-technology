@@ -505,21 +505,27 @@ svg {
     padding: 24px 20px !important;
   }
 
-  /* ── 5.28 FLOATING BADGES & RIBBONS — prevent photo/text collisions on mobile ──
-     Absolute-positioned badges (both top:-16px and top:20px) bleed outside viewport or cover photos/text */
+  /* ── 5.28 FLOATING BADGES & RIBBONS — top right alignment on mobile ──
+     All founder and co-founder badges align to top right side on mobile without covering content or overflowing */
   div[style*="position:absolute;top:-16px;right:-12px"],
   div[style*="position:absolute;top:-16px;right:-16px"],
   div[style*="position:absolute;top:-16px;right:16px"],
   div[style*="position:absolute;top:-16px"],
   div[style*="position:absolute;top:20px;right:20px"],
   div[style*="position:absolute;top:20px"] {
-    position: static !important;
-    display: inline-block !important;
+    position: relative !important;
+    top: 0 !important;
+    right: 0 !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
     margin-bottom: 12px !important;
+    width: fit-content !important;
+    max-width: 100% !important;
+    text-align: right !important;
     font-size: 0.7rem !important;
     white-space: normal !important;
     word-break: break-word !important;
-    max-width: 100% !important;
   }
 
   /* Allow overflow:visible on the relative-positioned parent 
