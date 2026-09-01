@@ -1,0 +1,15 @@
+{
+  "name": "RiskFreeFeel Technologies",
+  "short_name": "RiskFreeFeel",
+  "icons": [
+    {
+      "src": "/assets/images/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#0057FF",
+  "background_color": "#0B1120",
+  "display": "standalone"
+}
