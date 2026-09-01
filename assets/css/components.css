@@ -527,7 +527,7 @@
 
 .testimonial-card {
   flex-shrink: 0;
-  width: 380px;
+  width: min(380px, calc(100vw - 48px));
   background: var(--bg-glass);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
